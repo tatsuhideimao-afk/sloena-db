@@ -1,0 +1,16 @@
+{
+  "id": "hokuto-tensei2",
+  "name": "スマスロ北斗の拳 転生の章2",
+  "shortName": "北斗天破",
+  "manufacturer": "サミー",
+  "introDate": "2026-01-05",
+  "installations": 5179,
+  "lastUpdated": "2026-05-20",
+  "status": "preparing",
+  "iconColor": "#b91c1c",
+  "sources": [
+    { "name": "altema", "url": "https://altema.jp/pachimo/lhokutotenseitenjo" },
+    { "name": "なな徹", "url": "https://nana-press.com/kaiseki/machine/1097/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/hokuto-tensei2-tenjou/" }
+  ]
+}
