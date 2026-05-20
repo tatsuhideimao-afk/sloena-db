@@ -6,11 +6,122 @@
   "introDate": "2026-03-02",
   "installations": 4500,
   "lastUpdated": "2026-05-20",
-  "status": "preparing",
+  "status": "ready",
   "iconColor": "#a16207",
+  "hintsLabel": "示唆演出",
   "sources": [
     { "name": "altema", "url": "https://altema.jp/pachimo/" },
-    { "name": "なな徹", "url": "https://nana-press.com/" },
-    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
-  ]
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/kabaneri2-unato-tenjou/" },
+    { "name": "DMMぱちタウン", "url": "https://p-town.dmm.com/machines/4930" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/sammy-slot/248689/" },
+    { "name": "アミュタメ", "url": "https://www.amuse-p.com/blog/kabaneri-unato/" },
+    { "name": "エナイキ", "url": "https://enaiki.com/" },
+    { "name": "ハイエナくん", "url": "https://haienakun.com/kabaneri-kaimon/" },
+    { "name": "flick7(実践値)", "url": "https://flick7.net/slot/kabaneri_unato__c.php" }
+  ],
+  "spec": {
+    "type": "AT",
+    "pureZou": 6.0,
+    "coinSpeed": 31.4,
+    "atRate": "未公表",
+    "machineRate": "97.0%〜113%程度(推定)",
+    "tImashi": "ゲーム数天井+周期天井の二重構造。AT純増6.0枚、駿城ボーナス(初当り専用)→カバネリボーナス(ST中メイン)→景之ST/裏景之ST(上位)の流れ。黒煙ポイントMAXで上位STへの直行も。"
+  },
+  "ceilings": [
+    {
+      "name": "ゲーム数",
+      "unit": "実G数",
+      "max": 996,
+      "source": "液晶ゲーム数",
+      "note": "通常時最大996G+αでエピソードボーナス当選"
+    },
+    {
+      "name": "周期",
+      "unit": "周期",
+      "max": 6,
+      "source": "サブ液晶",
+      "note": "6周期到達でエピソードボーナス当選"
+    }
+  ],
+  "evTables": {
+    "ゲーム数": {
+      "equiv": [[0,-2500],[100,-2200],[200,-1800],[300,-1300],[400,-700],[500,-50],[600,800],[700,1700],[800,2800],[900,4100],[996,5500]],
+      "rate56": [[0,-4500],[100,-4200],[200,-3800],[300,-3300],[400,-2700],[500,-2050],[600,-1200],[700,-300],[800,800],[900,2100],[996,3500]],
+      "note": "スロパチクエスト/エナイキ集計ベース、等価600G〜プラス、5.6枚交換は800G〜"
+    },
+    "ゲーム数_short": {
+      "equiv": [[0,500],[100,1100],[200,1900],[300,2900],[400,4100],[500,5500],[596,7000]],
+      "rate56": [[0,-1500],[100,-900],[200,-100],[300,900],[400,2100],[500,3500],[596,5000]],
+      "note": "設定変更後/ST駆け抜け後/景之ST後の短縮天井(596G+α/4周期)時。等価0G〜プラス"
+    }
+  },
+  "modes": [
+    { "name": "通常", "zones": "周期天井依存", "tenjo": "996G/6周期", "note": "通常滞在、サブ液晶背景デフォルト" },
+    { "name": "短縮(駆け抜け/景之後)", "zones": "周期天井依存", "tenjo": "596G/4周期", "note": "サブ液晶背景が桜or海門城に変化" },
+    { "name": "リセット(設定変更後)", "zones": "短縮天井", "tenjo": "596G/4周期", "note": "設定変更後は短縮天井、有利区間リセット" },
+    { "name": "カバネリ高確", "zones": "ST終了後20G間", "tenjo": "-", "note": "ST後20G間滞在、カバネチャンス目で即周期到達期待" },
+    { "name": "ST中", "zones": "規定枚数まで", "tenjo": "-", "note": "カバネリボーナス継続中" },
+    { "name": "景之ST", "zones": "上位ST", "tenjo": "-", "note": "終了後天井短縮+ループ期待" },
+    { "name": "裏景之ST", "zones": "プレミアムST", "tenjo": "-", "note": "本機最強、終了後必ず景之ST以上へ移行" }
+  ],
+  "hints": [
+    { "text": "サブ液晶背景: 桜", "type": "短縮天井", "detail": "ST駆け抜け後/景之ST後の短縮天井(596G/4周期)濃厚", "priority": 5 },
+    { "text": "サブ液晶背景: 海門城", "type": "短縮天井", "detail": "桜と同じく短縮天井示唆、次回ボーナスまでフォロー", "priority": 5 },
+    { "text": "輪廻くじ選択", "type": "周期/規定示唆", "detail": "周期や規定ポイントを示唆、選んで内容確認推奨", "priority": 4 },
+    { "text": "アイテムくじ選択", "type": "設定示唆", "detail": "設定示唆系のおみくじ、設定狙い時に有効", "priority": 3 },
+    { "text": "アイキャッチ: 無名", "type": "CZ示唆", "detail": "CZ近い示唆、続行推奨", "priority": 4 },
+    { "text": "アイキャッチ: 生駒", "type": "CZ示唆", "detail": "CZ近い示唆、続行推奨", "priority": 4 },
+    { "text": "オールスター目", "type": "プレミア", "detail": "駿城ボーナス中なら裏景之STのチャンス", "priority": 5 },
+    { "text": "黒煙ポイントMAX", "type": "上位ST直行", "detail": "次回初当りで海門回想or真景之STor裏景之ST", "priority": 5 },
+    { "text": "銅藍(どうらん)CZ", "type": "高期待CZ", "detail": "一発告知タイプ、残り2Gのチャンス目はボーナス濃厚", "priority": 5 },
+    { "text": "ST駆け抜け", "type": "短縮示唆", "detail": "次回短縮天井(596G/4周期)+カバネリ高確20G" },
+    { "text": "サミートロフィー", "type": "設定示唆", "detail": "色/種類で設定示唆", "priority": 4 }
+  ],
+  "endCards": [
+    { "char": "サブ液晶: 桜背景", "detail": "短縮天井濃厚(596G/4周期)", "priority": 5 },
+    { "char": "サブ液晶: 海門城背景", "detail": "短縮天井濃厚、次回ボーナスまで続行", "priority": 5 },
+    { "char": "デフォルト背景", "detail": "通常天井(996G/6周期)、即やめ可", "priority": 1 },
+    { "char": "輪廻くじで近い周期示唆", "detail": "規定周期近い示唆、続行価値あり", "priority": 4 },
+    { "char": "サミートロフィー金", "detail": "設定6濃厚", "priority": 5 },
+    { "char": "サミートロフィー銀", "detail": "設定4以上濃厚", "priority": 4 }
+  ],
+  "zenchoPatterns": [
+    { "g": "ST後0-20G", "pattern": "カバネリ高確、カバネチャンス目で即周期到達期待" },
+    { "g": "周期到達ゲーム", "pattern": "規定ポイント到達で本前兆移行" },
+    { "g": "596G+α(短縮天井時)", "pattern": "短縮天井到達、エピソードボーナス" },
+    { "g": "996G+α", "pattern": "通常天井到達、エピソードボーナス" },
+    { "g": "黒煙ポイントMAX", "pattern": "次回初当りで上位ST直行" }
+  ],
+  "neraiQuick": [
+    { "type": "通常天井狙い(等価)", "threshold": "600G〜", "note": "通常996G天井までの期待値プラス" },
+    { "type": "通常天井狙い(5.6枚)", "threshold": "800G〜", "note": "持ちメダル/現金問わず" },
+    { "type": "短縮天井狙い(リセット・等価)", "threshold": "0G〜", "note": "設定変更後の596G短縮、0G〜プラス" },
+    { "type": "短縮天井狙い(ST駆け抜け後・等価)", "threshold": "0G〜", "note": "サブ液晶桜/海門城確認、0スルー100G〜" },
+    { "type": "下位ST後(0スルー)", "threshold": "550G〜", "note": "通常後と同等扱い" },
+    { "type": "下位ST後(1-2スルー)", "threshold": "580G〜", "note": "スルー回数で上方修正" },
+    { "type": "下位ST後(3スルー以上)", "threshold": "G数不問", "note": "上位ST期待度大幅UP" },
+    { "type": "上位ST後ループ狙い(1200枚以上)", "threshold": "0G〜", "note": "直近上位ST1200枚以上獲得=ループ率UP濃厚" },
+    { "type": "上位ST後(1200枚以下)", "threshold": "100G〜", "note": "通常扱い" },
+    { "type": "黒煙ポイントMAX濃厚台", "threshold": "0G〜", "note": "上位ST直行期待で大幅+EV" }
+  ],
+  "yameRules": [
+    { "situation": "ST終了後", "action": "サブ液晶背景を必ず確認", "reason": "桜/海門城なら短縮天井、デフォルトなら通常天井" },
+    { "situation": "サブ液晶: 桜or海門城", "action": "596G+α(短縮天井)まで続行", "reason": "短縮天井狙い+カバネリ高確20G" },
+    { "situation": "サブ液晶: デフォルト", "action": "ST後20G(カバネリ高確)消化してヤメ", "reason": "高確抜けたら通常天井狙いに移行" },
+    { "situation": "輪廻くじで近い周期示唆", "action": "該当周期まで続行", "reason": "規定ポイント近い示唆あり" },
+    { "situation": "上位ST後(1200枚以上獲得)", "action": "次回ST当選まで続行", "reason": "ループ率UPの可能性大" },
+    { "situation": "アイキャッチ無名/生駒", "action": "次回CZまで続行", "reason": "CZ近い示唆" },
+    { "situation": "黒煙ポイント蓄積中", "action": "MAX到達まで続行価値あり", "reason": "MAX到達で上位ST直行" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 300, "2": 700, "3": 1500 },
+    "czRanges": {},
+    "options": [
+      { "id": "shortTenjo", "label": "短縮天井濃厚(サブ液晶桜/海門城)", "value": 1500 },
+      { "id": "reset", "label": "リセット濃厚(設定変更後)", "value": 1000 },
+      { "id": "kageyukiLoop", "label": "上位ST1200枚以上獲得履歴", "value": 1500 },
+      { "id": "kurokemurMAX", "label": "黒煙ポイント高確時", "value": 800 },
+      { "id": "muna_ikoma", "label": "アイキャッチ無名/生駒出現", "value": 500 }
+    ]
+  }
 }

@@ -2,15 +2,119 @@
   "id": "bigdream",
   "name": "スマスロビッグドリーム THE GOLDEN PUSHER",
   "shortName": "ビッグドリーム",
-  "manufacturer": "エキサイト",
-  "introDate": "2026-02-02",
+  "manufacturer": "サミー",
+  "introDate": "2026-05-11",
   "installations": 4000,
   "lastUpdated": "2026-05-20",
-  "status": "preparing",
+  "status": "ready",
   "iconColor": "#f59e0b",
+  "hintsLabel": "ボイス示唆",
   "sources": [
     { "name": "altema", "url": "https://altema.jp/pachimo/" },
-    { "name": "なな徹", "url": "https://nana-press.com/" },
-    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
-  ]
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/biggudoriimu-the-golden-pusher-tenjou/" },
+    { "name": "DMMぱちタウン", "url": "https://p-town.dmm.com/specials/5050" },
+    { "name": "DMMぱちタウン(機種)", "url": "https://p-town.dmm.com/machines/4981" },
+    { "name": "アミュタメ", "url": "https://www.amuse-p.com/blog/bigdream-the-golden-pusher/" },
+    { "name": "P-WORLD", "url": "https://www.p-world.co.jp/machine/database/10446" },
+    { "name": "flick7(実践値)", "url": "https://flick7.net/slot/big_dream__c.php" }
+  ],
+  "spec": {
+    "type": "AT",
+    "pureZou": 8.2,
+    "coinSpeed": 30.7,
+    "atRate": "未公表",
+    "machineRate": "97.4%(設定1)〜推定112%",
+    "tImashi": "メダルプッシャー型AT機。AT「GOLDEN BONUS」純増約8.2枚、差枚管理、初期300枚保証。CZは1st JUDGE→2nd JUDGE→ジャッジメントの三段階。DREAM JP BONUS、デカエイリやんBET搭載。コイン単価約5.7円で投資負担大。"
+  },
+  "ceilings": [
+    {
+      "name": "通常G",
+      "unit": "実G数",
+      "max": 1499,
+      "source": "液晶ゲーム数",
+      "note": "通常時最大1499G消化でAT当選。333G/555G/999Gのゾーン振り分けあり"
+    },
+    {
+      "name": "ボール",
+      "unit": "ボール数",
+      "max": 0,
+      "source": "ドリームメーター",
+      "note": "ボール落下ごとにカウント、MAX到達でプレミアムCZ直行or次回AT1つ目宝箱が金。最大数は未公表(実践値待ち)"
+    }
+  ],
+  "evTables": {
+    "通常G": {
+      "equiv": [[0,-3500],[100,-3200],[200,-2700],[300,-2100],[400,-1400],[500,-500],[600,500],[700,1700],[800,3100],[900,4700],[1000,6500],[1100,8500],[1200,10700],[1300,13100],[1400,15700],[1499,18500]],
+      "rate56": [[0,-6500],[100,-6200],[200,-5700],[300,-5100],[400,-4400],[500,-3500],[600,-2500],[700,-1300],[800,100],[900,1700],[1000,3500],[1100,5500],[1200,7700],[1300,10100],[1400,12700],[1499,15500]],
+      "note": "コイン単価5.7円のため5.6枚換算でもプラス幅大。等価580G/5.6枚800G〜が106%ライン(推定)"
+    },
+    "通常G_reset": {
+      "equiv": [[0,200],[100,800],[200,1600],[300,2600],[400,3800],[500,5200],[600,6800],[700,8600],[800,10600],[900,12800],[999,15200]],
+      "rate56": [[0,-2500],[100,-1900],[200,-1100],[300,-100],[400,1100],[500,2500],[600,4100],[700,5900],[800,7900],[900,10100],[999,12500]],
+      "note": "リセット時(最大999G)の合算期待値。等価0G〜プラス、リセット恩恵で投資効率良好"
+    }
+  },
+  "modes": [
+    { "name": "通常", "zones": "333G/555G/999G", "tenjo": "最大1499G", "note": "通常モード、各ゾーンに振り分けあり" },
+    { "name": "リセット", "zones": "短縮天井", "tenjo": "最大999G", "note": "設定変更時、500G短縮の恩恵" },
+    { "name": "上位AT後", "zones": "天国濃厚", "tenjo": "未公表", "note": "終了画面に「555G以内当選濃厚」表示で続行確定" },
+    { "name": "AT中(GOLDEN BONUS)", "zones": "300枚保証", "tenjo": "-", "note": "純増8.2枚、差枚管理" },
+    { "name": "AT中(DREAM JP BONUS)", "zones": "差枚上乗せ", "tenjo": "-", "note": "デカエイリやんBET出現、エイリやんボイスでプレミア" }
+  ],
+  "hints": [
+    { "text": "CZ/AT終了画面でPUSH→ボイス発生", "type": "ボール天井示唆", "detail": "ボイスの種類でボール天井(ドリームメーター)残数を示唆", "priority": 5 },
+    { "text": "終了画面「555G以内当選濃厚」表示", "type": "短縮天井", "detail": "次回ATまで続行確定の超強示唆", "priority": 5 },
+    { "text": "アイキャッチ演出(複数種)", "type": "示唆", "detail": "種類に応じて様々な示唆あり(設定/モード/ゾーン)", "priority": 3 },
+    { "text": "1st JUDGE中の×の数", "type": "突破率", "detail": "×が多いほど突破期待度UP", "priority": 4 },
+    { "text": "1st JUDGE先告知(PUSHボタン)", "type": "突破示唆", "detail": "突破時の50%で発生する先告知", "priority": 4 },
+    { "text": "デカエイリやんBET(DREAM JP中)", "type": "上乗せ", "detail": "差枚上乗せ時に出現、特別ボイス示唆", "priority": 4 },
+    { "text": "AT中の特定枚数表示", "type": "設定示唆", "detail": "特定枚数で設定示唆発生", "priority": 4 },
+    { "text": "エンディング中の押し順宝石揃いボイス", "type": "プレミア", "detail": "ボイスの種類で様々な示唆", "priority": 3 },
+    { "text": "ボール赤色出現", "type": "プレミア", "detail": "高期待度の特殊ボール", "priority": 5 },
+    { "text": "ボール金色出現", "type": "プレミア", "detail": "最高期待度の特殊ボール", "priority": 5 }
+  ],
+  "endCards": [
+    { "char": "555G以内当選濃厚画面", "detail": "次回ATまで続行確定、最強示唆", "priority": 5 },
+    { "char": "ボール天井示唆ボイス(良)", "detail": "ボール天井解放まで続行価値あり", "priority": 4 },
+    { "char": "デフォルト画面", "detail": "通常天井狙い、特別な示唆なし", "priority": 1 },
+    { "char": "テラドリーム", "detail": "ボール天井示唆ボイス、続行推奨", "priority": 4 },
+    { "char": "マーベラス", "detail": "ボール天井示唆ボイス、続行推奨", "priority": 4 },
+    { "char": "ファイブ", "detail": "ボール天井示唆ボイス、続行推奨", "priority": 3 }
+  ],
+  "zenchoPatterns": [
+    { "g": "333G", "pattern": "ゾーン振り分けあり、AT当選可能性" },
+    { "g": "555G", "pattern": "ゾーン振り分け、上位AT後の天国濃厚ゾーン" },
+    { "g": "999G", "pattern": "リセット時天井、通常時ゾーン" },
+    { "g": "1499G", "pattern": "通常時最大天井" },
+    { "g": "ボール天井MAX", "pattern": "プレミアCZ直行or次回AT金宝箱" }
+  ],
+  "neraiQuick": [
+    { "type": "通常天井狙い(等価)", "threshold": "580G〜", "note": "106%ライン推定、コイン単価5.7円考慮" },
+    { "type": "通常天井狙い(5.6枚)", "threshold": "800G〜", "note": "コイン単価高めで深め必要" },
+    { "type": "リセット狙い(等価)", "threshold": "0G〜", "note": "リセット濃厚台のみ、999G短縮天井期待" },
+    { "type": "リセット狙い(5.6枚)", "threshold": "300G〜", "note": "持ちメダル基準" },
+    { "type": "ゾーン狙い(333G)", "threshold": "333G付近", "note": "ゾーン振り分け期待、当選率は実践値待ち" },
+    { "type": "ゾーン狙い(555G)", "threshold": "555G付近", "note": "555G以内当選濃厚画面後の上位AT狙い" },
+    { "type": "上位AT後狙い", "threshold": "0G〜", "note": "終了画面「555G以内当選濃厚」確認で続行" },
+    { "type": "ボイス示唆狙い(テラドリーム/マーベラス)", "threshold": "0G〜", "note": "前任者が示唆無視で即やめした台" }
+  ],
+  "yameRules": [
+    { "situation": "AT/CZ終了後", "action": "PUSHボタンでボイス確認", "reason": "ボール天井示唆ボイスの内容で続行可否判断" },
+    { "situation": "終了画面「555G以内当選濃厚」", "action": "次回ATまで続行必須", "reason": "天国濃厚、555G以内でAT当選" },
+    { "situation": "ボイス示唆(テラドリーム/マーベラス)", "action": "ボール天井解放まで続行", "reason": "ボール残数少ない示唆" },
+    { "situation": "ボイスなし/示唆弱", "action": "前兆フォロー後ヤメ", "reason": "通常モード、通常天井狙いに移行" },
+    { "situation": "アイキャッチ示唆弱", "action": "ヤメ可", "reason": "通常モード示唆" },
+    { "situation": "ボール赤/金履歴あり", "action": "次回AT当選まで続行", "reason": "ボール天井解放期待" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 300, "2": 800, "3": 1500 },
+    "czRanges": {},
+    "options": [
+      { "id": "reset", "label": "リセット濃厚(設定変更後)", "value": 1000 },
+      { "id": "voiceTera", "label": "ボイス示唆(テラドリーム等)あり", "value": 1500 },
+      { "id": "endCard555", "label": "555G以内当選濃厚画面履歴", "value": 2000 },
+      { "id": "ballMax", "label": "ボール天井近い示唆", "value": 1500 },
+      { "id": "ballGold", "label": "ボール赤/金履歴", "value": 1200 }
+    ]
+  }
 }

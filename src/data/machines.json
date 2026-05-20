@@ -29,7 +29,7 @@
     "introDate": "2026-01-05",
     "installations": 5179,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
+    "status": "ready",
     "iconColor": "#b91c1c"
   },
   {
@@ -62,7 +62,7 @@
     "introDate": "2026-03-02",
     "installations": 4500,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
+    "status": "ready",
     "iconColor": "#a16207"
   },
   {
@@ -91,11 +91,11 @@
     "id": "bigdream",
     "name": "スマスロビッグドリーム THE GOLDEN PUSHER",
     "shortName": "ビッグドリーム",
-    "manufacturer": "エキサイト",
-    "introDate": "2026-02-02",
+    "manufacturer": "サミー",
+    "introDate": "2026-05-11",
     "installations": 4000,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
+    "status": "ready",
     "iconColor": "#f59e0b"
   },
   {
