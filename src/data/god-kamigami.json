@@ -6,11 +6,105 @@
   "introDate": "2026-04-20",
   "installations": 3200,
   "lastUpdated": "2026-05-20",
-  "status": "preparing",
+  "status": "ready",
   "iconColor": "#eab308",
   "sources": [
     { "name": "altema", "url": "https://altema.jp/pachimo/" },
-    { "name": "なな徹", "url": "https://nana-press.com/" },
-    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
-  ]
+    { "name": "なな徹(機種解析)", "url": "https://nana-press.com/kaiseki/machine/1112/" },
+    { "name": "なな徹(天井期待値)", "url": "https://nana-press.com/kaiseki/machine/1112/35715/" },
+    { "name": "スロベース", "url": "https://slobase.jp/machines/million-god" },
+    { "name": "スロベース(期待値)", "url": "https://slobase.jp/articles/million-god-expected-value" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/milliongod-kiseki-tenjou/" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/universal-slot/252303/" },
+    { "name": "エナイキ", "url": "https://enaiki.com/" },
+    { "name": "ハイエナ通信", "url": "https://note.com/setudankiller/n/n0f2834d39b25" },
+    { "name": "アミュタメ", "url": "https://www.amuse-p.com/blog/million-god/" }
+  ],
+  "spec": {
+    "type": "AT",
+    "pureZou": 7.0,
+    "coinSpeed": 30.8,
+    "atRate": "1/294.8(設定6)",
+    "machineRate": "98.5%〜114.6%(設定6)",
+    "tImashi": "AT「ゴッドゲーム(GG)」純増約7.0枚/G、1セット50G、平均約350枚/セット、最低保証GG4セット=約1400枚。SGG(継続率75%以上)、PGG(GOD揃い・期待3000枚以上)搭載"
+  },
+  "ceilings": [
+    {
+      "name": "GG間",
+      "unit": "実G数",
+      "max": 1480,
+      "source": "メニュー画面",
+      "note": "AT(ゴッドゲーム)間最大1480G。リセット時は510G/1000G/1480Gの3段階振り分け"
+    }
+  ],
+  "evTables": {
+    "GG": {
+      "equiv": [[0,-3000],[100,-2700],[200,-2300],[300,-1800],[400,-1100],[500,-300],[600,650],[700,1700],[800,2900],[900,4200],[1000,5626],[1100,7100],[1200,8800],[1300,10600],[1400,12500]],
+      "rate56": [[0,-5500],[100,-5200],[200,-4800],[300,-4300],[400,-3600],[500,-2800],[600,-1850],[700,-800],[800,400],[900,1700],[1000,3126],[1100,4600],[1200,6300],[1300,8100],[1400,10000]]
+    },
+    "GG_reset": {
+      "equiv": [[0,400],[100,800],[200,1400],[300,2200],[400,3200],[500,4400]],
+      "rate56": [[0,-2100],[100,-1700],[200,-1100],[300,-300],[400,700],[500,1900]],
+      "note": "リセット時専用(510G短縮天井15.2%、1000G天井20.3%、1480G天井64.5%の合算期待値)"
+    }
+  },
+  "modes": [
+    { "name": "低確A", "zones": "GG当選率低い", "tenjo": "1480G", "note": "天井までハマる可能性大" },
+    { "name": "低確B", "zones": "GG当選率低い", "tenjo": "1480G", "note": "低確Aと似たハマり挙動" },
+    { "name": "通常", "zones": "標準的当選率", "tenjo": "1480G", "note": "通常滞在モード" },
+    { "name": "天国準備", "zones": "天国移行示唆", "tenjo": "1480G", "note": "ブラックホール演出1回終わりで期待度UP" },
+    { "name": "天国", "zones": "短期GG当選", "tenjo": "1480G", "note": "300G以内のGG当選期待" },
+    { "name": "超天国", "zones": "超短期GG当選", "tenjo": "1480G", "note": "天国上位、連続GG期待" }
+  ],
+  "hints": [
+    { "text": "ブラックホール演出(1回で終了)", "type": "モード示唆", "detail": "天国準備以上に期待", "priority": 3 },
+    { "text": "光の風が左→右(デフォルト)", "type": "モード示唆", "detail": "通常パターン、示唆なし", "priority": 0 },
+    { "text": "光の風が右→左(逆方向)", "type": "モード示唆", "detail": "モードアップに期待", "priority": 3 },
+    { "text": "陽炎演出", "type": "予告演出", "detail": "停止する液晶図柄色の予告、高モードほど出やすい", "priority": 2 },
+    { "text": "遅れ発生", "type": "モード示唆", "detail": "高モードほど出現率UP、天国準備以上の期待度UP。液晶7揃いの可能性もあり", "priority": 4 },
+    { "text": "青7・黄7の3連続以上(液晶右下)", "type": "前兆", "detail": "GG当選のチャンス", "priority": 3 },
+    { "text": "青7の3連続でGG当選", "type": "設定示唆", "detail": "偶数設定の期待度大幅UP", "priority": 4 },
+    { "text": "黄7の連続(Z-ZONE中)", "type": "ストック", "detail": "GGストック上乗せ", "priority": 5 },
+    { "text": "ガイアステージ移行", "type": "高モード", "detail": "高モード滞在のチャンス、本前兆中の可能性も", "priority": 4 },
+    { "text": "ガイアナビ(白7表示)", "type": "演出", "detail": "青7・黄7両方の代用として機能", "priority": 3 }
+  ],
+  "endCards": [
+    { "char": "アフロディーテ(泉)", "detail": "ステージ示唆、モード推測の参考", "priority": 2 },
+    { "char": "アルテミス(森)", "detail": "ステージ示唆", "priority": 2 },
+    { "char": "アポロン(遺跡)", "detail": "ステージ示唆", "priority": 2 },
+    { "char": "アクロポリス(麓)", "detail": "ステージ示唆", "priority": 2 },
+    { "char": "アテナ(神殿)", "detail": "高モード示唆", "priority": 3 },
+    { "char": "ガイアステージ", "detail": "高モード濃厚、GG期待度大", "priority": 5 }
+  ],
+  "zenchoPatterns": [
+    { "g": "ガイアベル発生", "pattern": "規定回数到達でガイアステージ移行抽選" },
+    { "g": "ガイアナビ発生", "pattern": "白7表示で青7・黄7の代用、GG期待度UP" },
+    { "g": "GOD揃い(1/16384)", "pattern": "PGG(プレミアムゴッドゲーム)突入、期待3000枚以上" },
+    { "g": "赤7揃い(1/6900)", "pattern": "SGG(スーパーゴッドゲーム)突入、75%以上ループ" },
+    { "g": "黄7揃い", "pattern": "Z-ZONE突入の可能性、Z-GAMEへ" }
+  ],
+  "neraiQuick": [
+    { "type": "GG間天井狙い(通常・等価)", "threshold": "350G〜", "note": "天井1480Gまで消化、ループストック獲得期待込み" },
+    { "type": "GG間天井狙い(通常・5.6枚)", "threshold": "650G〜", "note": "コイン単価考慮、深め推奨" },
+    { "type": "リセット狙い(等価)", "threshold": "0G〜", "note": "510G短縮天井15.2%、1000G天井20.3%、1480G天井64.5%" },
+    { "type": "リセット狙い(5.6枚)", "threshold": "250G〜", "note": "リセット恩恵を考慮した持ちメダル基準" },
+    { "type": "高設定狙い(設定6)", "threshold": "初当り1/294.8", "note": "機械割114.6%、終日+79,716円期待値" }
+  ],
+  "yameRules": [
+    { "situation": "GG終了後", "action": "G-ZONE抜け後32G消化", "reason": "GGストック否定確認のため必須" },
+    { "situation": "Z-ZONE終了後", "action": "32G消化してGGストックなし確認", "reason": "Z-ZONE後はストック持ち越し可能性" },
+    { "situation": "エンディング後", "action": "32G消化、有利区間リセット可能性", "reason": "差枚プラス2000枚付近で謎連の可能性あり" },
+    { "situation": "ガイアステージ滞在中", "action": "GG当選まで続行", "reason": "高モード濃厚、当選期待大" },
+    { "situation": "天国準備示唆出現後", "action": "300G〜500G消化", "reason": "天国移行確認のため" },
+    { "situation": "リセット濃厚台で0G〜", "action": "1000Gまで続行可", "reason": "短縮天井期待で投資効率良好" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 200, "2": 600, "3": 1200 },
+    "czRanges": {},
+    "options": [
+      { "id": "reset", "label": "リセット濃厚(設定変更後)", "value": 800 },
+      { "id": "highMode", "label": "高モード示唆(ガイア演出/遅れ)", "value": 500 },
+      { "id": "zzone", "label": "Z-ZONE未消化フラグ", "value": 1000 }
+    ]
+  }
 }

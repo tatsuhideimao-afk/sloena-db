@@ -24,7 +24,11 @@ type Rate = 'equiv' | 'rate56';
 
 export default function ExpectedValueCalculator({ machine }: { machine: Machine }) {
   const evTables = machine.evTables;
-  const counters = evTables ? Object.keys(evTables) : [];
+  // 実天井に対応するカウンタのみをスライダー&合算対象にする。
+  // (GODのGG_reset等、対応天井のない補助テーブルは合算しない)
+  const counters = evTables
+    ? Object.keys(evTables).filter((k) => findCeiling(machine.ceilings, k))
+    : [];
   const corrections = machine.corrections;
 
   // 1スライダーにつき1カウンタ。初期値はCZ系を浅め、その他を深めに。

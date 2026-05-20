@@ -1,0 +1,122 @@
+{
+  "id": "okidoki-black",
+  "name": "沖ドキ!BLACK",
+  "shortName": "沖ドキBLACK",
+  "manufacturer": "ユニバーサル",
+  "introDate": "2024-07-01",
+  "installations": 4500,
+  "lastUpdated": "2026-05-20",
+  "status": "ready",
+  "iconColor": "#52525b",
+  "sources": [
+    { "name": "altema", "url": "https://altema.jp/pachimo/" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/universal-slot/212411/" },
+    { "name": "DMMぱちタウン", "url": "https://p-town.dmm.com/specials/3614" },
+    { "name": "ハイエナくん", "url": "https://haienakun.com/okidoki_black/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/okidokiblack-tenjou/" },
+    { "name": "けんけん(noteデータ分析)", "url": "https://note.com/kenslodata/n/nc1436b4eb624" },
+    { "name": "たられば(noteハイエナ)", "url": "https://note.com/g1slotapple/n/n76e4eda23332" },
+    { "name": "ダンジャーマスター", "url": "https://dangermaster-blog.online/okidokiblack-slot/" }
+  ],
+  "spec": {
+    "type": "ART/疑似ボーナス",
+    "pureZou": 2.0,
+    "coinSpeed": 32,
+    "atRate": "1/301.8(実戦値)",
+    "machineRate": "97.0%〜110%程度",
+    "tImashi": "純増約2.0枚/G、初当たり平均期待枚数392.2枚(実戦値)、有利区間切断後の黒ドキで一撃性あり、平均940.8枚/中央値701枚(2連以上)"
+  },
+  "ceilings": [
+    {
+      "name": "ボーナス間",
+      "unit": "実G数",
+      "max": 999,
+      "source": "ハイビスカスランプ",
+      "note": "通常モード999G+α、リセット時25%で399G短縮、チャンス・引き戻し200G"
+    },
+    {
+      "name": "有利区間",
+      "unit": "有利区間G",
+      "max": 2000,
+      "source": "推定値",
+      "note": "有利区間2000G超過後の初当りで天国移行・黒ドキ濃厚(実戦値)"
+    }
+  ],
+  "evTables": {
+    "ボーナス間": {
+      "equiv": [[0,-1800],[100,-1600],[200,-1300],[300,-900],[400,-300],[470,200],[500,500],[600,1300],[700,2200],[800,3300],[900,4600]],
+      "rate56": [[0,-3000],[100,-2800],[200,-2500],[300,-2100],[400,-1500],[520,-500],[590,0],[600,200],[700,1100],[800,2200],[900,3500]],
+      "note": "等価470G〜+106%ライン、5.6枚500G持ちメダル520G〜、5.6枚現金590G〜(たられば集計値ベース)"
+    },
+    "有利区間": {
+      "equiv": [[0,-2200],[500,-1700],[1000,-900],[1500,300],[2000,1800],[2500,3800],[3000,5800]],
+      "rate56": [[0,-3800],[500,-3300],[1000,-2500],[1500,-1300],[2000,200],[2500,2200],[3000,4200]],
+      "note": "有利区間2000G超で天国・黒ドキ移行濃厚"
+    }
+  },
+  "modes": [
+    { "name": "通常A", "zones": "999G天井", "tenjo": "999G+α", "note": "標準モード、天国移行率低い" },
+    { "name": "通常B", "zones": "999G天井(優遇)", "tenjo": "999G+α", "note": "天国移行率高い、狙い目モード" },
+    { "name": "チャンス", "zones": "200G天井", "tenjo": "200G", "note": "リセット時40%選択、200G以内当選で通常B以上濃厚" },
+    { "name": "引き戻し", "zones": "200G天井", "tenjo": "200G", "note": "天国転落後の救済" },
+    { "name": "天国", "zones": "32G以内連チャン", "tenjo": "32G+α", "note": "シリーズおなじみ高ループ" },
+    { "name": "ドキドキ", "zones": "32G以内BIG連", "tenjo": "32G+α", "note": "BIGストック高頻度、天国上位" },
+    { "name": "超ドキドキ", "zones": "32G以内BIG連(高)", "tenjo": "32G+α", "note": "プレミアモード、超大量出玉" },
+    { "name": "GODモード", "zones": "32G以内BIG連", "tenjo": "32G+α", "note": "BIG5連以上確定、大量出玉" },
+    { "name": "黒ドキモード", "zones": "32G以内BIG連", "tenjo": "32G+α", "note": "有利区間切断後の発動可能性、本機最強の一撃モード" },
+    { "name": "裏ドキモード", "zones": "ロングフリーズ確定", "tenjo": "ボーナス当選必至", "note": "全モードから移行可能性、RB連続でチャンス" }
+  ],
+  "hints": [
+    { "text": "ハイビスカス通常点灯", "type": "ボーナス確定", "detail": "ボーナス当選を告知", "priority": 5 },
+    { "text": "ハイビスカス高速点滅", "type": "モード示唆", "detail": "天国濃厚パターン", "priority": 4 },
+    { "text": "ハイビスカススロー点滅", "type": "モード示唆", "detail": "BIG確定+α、モード示唆", "priority": 4 },
+    { "text": "テンパイボイス変化", "type": "モード示唆", "detail": "通常と異なる音声で示唆/楽曲変化", "priority": 3 },
+    { "text": "カナちゃんランプ点灯(BB中)", "type": "1G連", "detail": "BB1G連当選確定", "priority": 5 },
+    { "text": "ショートロック(リール始動の遅れ)", "type": "ボーナス示唆", "detail": "次ゲームのボーナス告知パターン", "priority": 4 },
+    { "text": "中段チェリー", "type": "プレミア", "detail": "超ドキドキモード移行期待", "priority": 5 },
+    { "text": "確定役(中段BAR揃い)", "type": "強チャンス", "detail": "BIG確定+モード昇格抽選", "priority": 5 },
+    { "text": "スイカ", "type": "ボーナス契機", "detail": "BIG:REG=1:1、モード移行抽選優遇", "priority": 3 },
+    { "text": "チェリーB成立", "type": "設定示唆", "detail": "高設定ほど出現率UP(チェリーAより)", "priority": 3 },
+    { "text": "ロングフリーズ発生", "type": "プレミア", "detail": "裏ドキモード突入、必ずボーナス", "priority": 5 }
+  ],
+  "endCards": [
+    { "char": "ハイビスカススロー点滅", "detail": "天国転落示唆、引き戻し期待", "priority": 3 },
+    { "char": "カナちゃんランプ赤", "detail": "高設定示唆 or 高モード", "priority": 4 },
+    { "char": "BIG中の確定役", "detail": "モード昇格抽選あり", "priority": 4 },
+    { "char": "黒い点滅(黒ドキ示唆)", "detail": "次回黒ドキモード期待", "priority": 5 }
+  ],
+  "zenchoPatterns": [
+    { "g": "0-33G(天国モード時)", "pattern": "ボーナス当選濃厚" },
+    { "g": "200G(チャンス・引き戻し時)", "pattern": "200G天井到達でボーナス" },
+    { "g": "380-405G(リセットゾーン)", "pattern": "399G短縮天井のサンプルゾーン" },
+    { "g": "999G+α", "pattern": "通常モード天井到達" },
+    { "g": "2000G以降(有利区間)", "pattern": "天国・黒ドキ移行濃厚(実戦値)" }
+  ],
+  "neraiQuick": [
+    { "type": "天井狙い(等価)", "threshold": "470G〜", "note": "106%ライン、ボーナス間天井までの期待値プラス" },
+    { "type": "天井狙い(5.6枚持ちメダル)", "threshold": "520G〜", "note": "持ちメダル5.6枚交換ライン" },
+    { "type": "天井狙い(5.6枚現金)", "threshold": "590G〜", "note": "現金投資の場合の106%ライン" },
+    { "type": "ゾーン狙い(天国狙い)", "threshold": "0-33G", "note": "天国モード台、ボーナス後即やめ台" },
+    { "type": "リセットゾーン狙い", "threshold": "380-405G", "note": "リセット濃厚台のみ、399G短縮25%期待" },
+    { "type": "リセットチャンス狙い", "threshold": "0-200G(リセット濃厚台)", "note": "リセット時40%でチャンス、200G天井" },
+    { "type": "有利区間天井狙い", "threshold": "有利1700G〜", "note": "2000G付近で天国/黒ドキ移行濃厚" },
+    { "type": "スルー回数狙い", "threshold": "5スルー以上", "note": "上位モード期待、+EV濃厚" }
+  ],
+  "yameRules": [
+    { "situation": "ボーナス後", "action": "33G消化してヤメ", "reason": "天国モード32G以内当選を確認" },
+    { "situation": "天国転落後", "action": "ヤメ可、ただし200G or 399G狙いも検討", "reason": "引き戻し可能性" },
+    { "situation": "リセット濃厚台チャンス狙い後", "action": "200Gまで回してヤメ", "reason": "チャンスモード天井200G" },
+    { "situation": "黒ドキ示唆出現", "action": "次回まで続行", "reason": "黒ドキ=シリーズ最強モード" },
+    { "situation": "ロングフリーズ後", "action": "裏ドキ消化、次回続行", "reason": "裏ドキはボーナス連続濃厚" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 200, "2": 500, "3": 900, "5": 1800, "10": 3500 },
+    "czRanges": {},
+    "options": [
+      { "id": "reset", "label": "リセット濃厚(設定変更後)", "value": 600 },
+      { "id": "kanachan", "label": "カナちゃん赤点灯履歴あり", "value": 800 },
+      { "id": "yuriku2000", "label": "有利区間2000G以上消化", "value": 1500 },
+      { "id": "kurodoki", "label": "黒ドキ示唆あり", "value": 1500 }
+    ]
+  }
+}

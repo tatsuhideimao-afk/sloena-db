@@ -1,5 +1,16 @@
 [
   {
+    "id": "hokuto",
+    "name": "スマスロ北斗の拳",
+    "shortName": "北斗",
+    "manufacturer": "サミー",
+    "introDate": "2023-04-03",
+    "installations": 5634,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#7c2d12"
+  },
+  {
     "id": "tokyo-ghoul",
     "name": "スマスロ東京喰種",
     "shortName": "グール",
@@ -22,15 +33,15 @@
     "iconColor": "#b91c1c"
   },
   {
-    "id": "hokuto",
-    "name": "スマスロ北斗の拳",
-    "shortName": "北斗",
-    "manufacturer": "サミー",
-    "introDate": "2023-04-03",
-    "installations": 5634,
+    "id": "okidoki-gold",
+    "name": "沖ドキ!GOLD",
+    "shortName": "沖ドキGOLD",
+    "manufacturer": "ユニバーサル",
+    "introDate": "2022-12-19",
+    "installations": 5000,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
-    "iconColor": "#7c2d12"
+    "status": "ready",
+    "iconColor": "#facc15"
   },
   {
     "id": "monkey-v",
@@ -55,6 +66,17 @@
     "iconColor": "#a16207"
   },
   {
+    "id": "okidoki-black",
+    "name": "沖ドキ!BLACK",
+    "shortName": "沖ドキBLACK",
+    "manufacturer": "ユニバーサル",
+    "introDate": "2024-07-01",
+    "installations": 4500,
+    "lastUpdated": "2026-05-20",
+    "status": "ready",
+    "iconColor": "#52525b"
+  },
+  {
     "id": "manuchi-yoshimune",
     "name": "L真打 吉宗",
     "shortName": "真打吉宗",
@@ -63,7 +85,7 @@
     "installations": 4200,
     "lastUpdated": "2026-05-20",
     "status": "preparing",
-    "iconColor": "#facc15"
+    "iconColor": "#fbbf24"
   },
   {
     "id": "bigdream",
@@ -117,7 +139,7 @@
     "introDate": "2026-04-20",
     "installations": 3200,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
+    "status": "ready",
     "iconColor": "#eab308"
   },
   {

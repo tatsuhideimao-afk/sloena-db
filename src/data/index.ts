@@ -10,6 +10,8 @@ const machineModules: Record<string, () => MachineModule> = {
   'kabaneri2': () => import('./kabaneri2.json') as unknown as MachineModule,
   'bigdream': () => import('./bigdream.json') as unknown as MachineModule,
   'monkey-v': () => import('./monkey-v.json') as unknown as MachineModule,
+  'okidoki-gold': () => import('./okidoki-gold.json') as unknown as MachineModule,
+  'okidoki-black': () => import('./okidoki-black.json') as unknown as MachineModule,
 };
 
 export const allMachines: Machine[] = machinesData as unknown as Machine[];
