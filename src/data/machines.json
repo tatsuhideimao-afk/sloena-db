@@ -1,0 +1,167 @@
+[
+  {
+    "id": "tokyo-ghoul",
+    "name": "スマスロ東京喰種",
+    "shortName": "グール",
+    "manufacturer": "スパイキー",
+    "introDate": "2025-02-03",
+    "installations": 5208,
+    "lastUpdated": "2026-05-20",
+    "status": "ready",
+    "iconColor": "#dc2626"
+  },
+  {
+    "id": "hokuto-tensei2",
+    "name": "スマスロ北斗の拳 転生の章2",
+    "shortName": "北斗天破",
+    "manufacturer": "サミー",
+    "introDate": "2026-01-05",
+    "installations": 5179,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#b91c1c"
+  },
+  {
+    "id": "hokuto",
+    "name": "スマスロ北斗の拳",
+    "shortName": "北斗",
+    "manufacturer": "サミー",
+    "introDate": "2023-04-03",
+    "installations": 5634,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#7c2d12"
+  },
+  {
+    "id": "monkey-v",
+    "name": "スマスロモンキーターンV",
+    "shortName": "モンキー5",
+    "manufacturer": "山佐",
+    "introDate": "2023-12-04",
+    "installations": 4800,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#0369a1"
+  },
+  {
+    "id": "kabaneri2",
+    "name": "スマスロ甲鉄城のカバネリ 海門決戦",
+    "shortName": "カバネリ2",
+    "manufacturer": "サミー",
+    "introDate": "2026-03-02",
+    "installations": 4500,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#a16207"
+  },
+  {
+    "id": "manuchi-yoshimune",
+    "name": "L真打 吉宗",
+    "shortName": "真打吉宗",
+    "manufacturer": "大都技研",
+    "introDate": "2026-04-06",
+    "installations": 4200,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#facc15"
+  },
+  {
+    "id": "bigdream",
+    "name": "スマスロビッグドリーム THE GOLDEN PUSHER",
+    "shortName": "ビッグドリーム",
+    "manufacturer": "エキサイト",
+    "introDate": "2026-02-02",
+    "installations": 4000,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#f59e0b"
+  },
+  {
+    "id": "karakuri-circus",
+    "name": "スマスロからくりサーカス",
+    "shortName": "からくり",
+    "manufacturer": "ニューギン",
+    "introDate": "2023-06-19",
+    "installations": 3800,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#a855f7"
+  },
+  {
+    "id": "god-eater",
+    "name": "スマスロゴッドイーター リザレクション",
+    "shortName": "ゴッドイーター",
+    "manufacturer": "山佐",
+    "introDate": "2024-07-22",
+    "installations": 3500,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#dc2626"
+  },
+  {
+    "id": "magia-record",
+    "name": "スマスロマギアレコード",
+    "shortName": "マギレコ",
+    "manufacturer": "ミズホ",
+    "introDate": "2025-04-07",
+    "installations": 3400,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#ec4899"
+  },
+  {
+    "id": "god-kamigami",
+    "name": "スマスロミリオンゴッド-神々の軌跡-",
+    "shortName": "GOD",
+    "manufacturer": "ミズホ",
+    "introDate": "2026-04-20",
+    "installations": 3200,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#eab308"
+  },
+  {
+    "id": "ghost-in-the-shell",
+    "name": "スマスロ攻殻機動隊",
+    "shortName": "攻殻",
+    "manufacturer": "サミー",
+    "introDate": "2026-02-02",
+    "installations": 3000,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#06b6d4"
+  },
+  {
+    "id": "tekken6",
+    "name": "スマスロ鉄拳6",
+    "shortName": "鉄拳6",
+    "manufacturer": "山佐",
+    "introDate": "2026-01-05",
+    "installations": 2800,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#e11d48"
+  },
+  {
+    "id": "bakemonogatari",
+    "name": "スマスロ化物語",
+    "shortName": "化物語",
+    "manufacturer": "サミー",
+    "introDate": "2025-12-08",
+    "installations": 2500,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#7c3aed"
+  },
+  {
+    "id": "gundam-uc",
+    "name": "Lパチスロ機動戦士ガンダムユニコーン 覚醒DRIVE",
+    "shortName": "ガンダムUC",
+    "manufacturer": "ビスティ",
+    "introDate": "2026-04-20",
+    "installations": 2300,
+    "lastUpdated": "2026-05-20",
+    "status": "preparing",
+    "iconColor": "#0891b2"
+  }
+]

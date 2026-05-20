@@ -1,0 +1,16 @@
+{
+  "id": "god-kamigami",
+  "name": "スマスロミリオンゴッド-神々の軌跡-",
+  "shortName": "GOD",
+  "manufacturer": "ミズホ",
+  "introDate": "2026-04-20",
+  "installations": 3200,
+  "lastUpdated": "2026-05-20",
+  "status": "preparing",
+  "iconColor": "#eab308",
+  "sources": [
+    { "name": "altema", "url": "https://altema.jp/pachimo/" },
+    { "name": "なな徹", "url": "https://nana-press.com/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
+  ]
+}

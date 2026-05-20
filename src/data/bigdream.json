@@ -1,0 +1,16 @@
+{
+  "id": "bigdream",
+  "name": "スマスロビッグドリーム THE GOLDEN PUSHER",
+  "shortName": "ビッグドリーム",
+  "manufacturer": "エキサイト",
+  "introDate": "2026-02-02",
+  "installations": 4000,
+  "lastUpdated": "2026-05-20",
+  "status": "preparing",
+  "iconColor": "#f59e0b",
+  "sources": [
+    { "name": "altema", "url": "https://altema.jp/pachimo/" },
+    { "name": "なな徹", "url": "https://nana-press.com/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
+  ]
+}

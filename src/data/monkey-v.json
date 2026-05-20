@@ -1,0 +1,16 @@
+{
+  "id": "monkey-v",
+  "name": "スマスロモンキーターンV",
+  "shortName": "モンキー5",
+  "manufacturer": "山佐",
+  "introDate": "2023-12-04",
+  "installations": 4800,
+  "lastUpdated": "2026-05-20",
+  "status": "preparing",
+  "iconColor": "#0369a1",
+  "sources": [
+    { "name": "altema", "url": "https://altema.jp/pachimo/" },
+    { "name": "なな徹", "url": "https://nana-press.com/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
+  ]
+}

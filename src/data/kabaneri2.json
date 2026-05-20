@@ -1,0 +1,16 @@
+{
+  "id": "kabaneri2",
+  "name": "スマスロ甲鉄城のカバネリ 海門決戦",
+  "shortName": "カバネリ2",
+  "manufacturer": "サミー",
+  "introDate": "2026-03-02",
+  "installations": 4500,
+  "lastUpdated": "2026-05-20",
+  "status": "preparing",
+  "iconColor": "#a16207",
+  "sources": [
+    { "name": "altema", "url": "https://altema.jp/pachimo/" },
+    { "name": "なな徹", "url": "https://nana-press.com/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
+  ]
+}
