@@ -25,14 +25,14 @@ export default function Home() {
   const others = filtered.filter((m) => !isFavorite(m.id));
 
   return (
-    <div className="min-h-screen bg-[#0c1410] text-stone-100">
-      <header className="sticky top-0 bg-[#0c1410]/95 backdrop-blur border-b border-teal-900/30 z-10">
+    <div className="min-h-screen bg-[#eef4f1] text-slate-800">
+      <header className="sticky top-0 bg-[#eef4f1]/95 backdrop-blur border-b border-slate-200 z-10">
         <div className="px-4 py-3">
           <h1 className="text-xl font-bold tracking-wider">
-            <span className="text-teal-400">スロエナ</span>
+            <span className="text-teal-600">スロエナ</span>
             <span>DB</span>
           </h1>
-          <p className="text-xs text-stone-400 mt-0.5">スマスロ ハイエナ稼働支援</p>
+          <p className="text-xs text-slate-500 mt-0.5">スマスロ ハイエナ稼働支援</p>
         </div>
       </header>
 
@@ -41,7 +41,7 @@ export default function Home() {
 
         {favorites.length > 0 && (
           <section>
-            <h2 className="text-sm text-teal-400 font-bold mb-2">★お気に入り</h2>
+            <h2 className="text-sm text-teal-600 font-bold mb-2">★お気に入り</h2>
             <div className="space-y-2">
               {favorites.map((m) => (
                 <MachineCard
@@ -56,7 +56,7 @@ export default function Home() {
         )}
 
         <section>
-          <h2 className="text-sm text-stone-400 font-bold mb-2">全機種(設置台数順)</h2>
+          <h2 className="text-sm text-slate-500 font-bold mb-2">全機種(設置台数順)</h2>
           {others.length > 0 ? (
             <div className="space-y-2">
               {others.map((m) => (
@@ -69,7 +69,7 @@ export default function Home() {
               ))}
             </div>
           ) : (
-            <div className="text-xs text-stone-500">該当する機種がありません</div>
+            <div className="text-xs text-slate-500">該当する機種がありません</div>
           )}
         </section>
       </div>

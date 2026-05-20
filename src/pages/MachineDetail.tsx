@@ -30,7 +30,7 @@ export default function MachineDetail() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#0c1410] text-stone-400 flex items-center justify-center">
+      <div className="min-h-screen bg-[#eef4f1] text-slate-500 flex items-center justify-center">
         読み込み中...
       </div>
     );
@@ -38,9 +38,9 @@ export default function MachineDetail() {
 
   if (!machine) {
     return (
-      <div className="min-h-screen bg-[#0c1410] text-stone-100 flex flex-col items-center justify-center gap-3">
+      <div className="min-h-screen bg-[#eef4f1] text-slate-800 flex flex-col items-center justify-center gap-3">
         <div>機種が見つかりません</div>
-        <Link to="/" className="text-teal-400 text-sm">
+        <Link to="/" className="text-teal-600 text-sm">
           ← ホームに戻る
         </Link>
       </div>
@@ -50,20 +50,20 @@ export default function MachineDetail() {
   const fav = isFavorite(machine.id);
 
   return (
-    <div className="min-h-screen bg-[#0c1410] text-stone-100">
-      <div className="sticky top-0 z-10 bg-[#0c1410]/95 backdrop-blur border-b border-teal-900/30">
+    <div className="min-h-screen bg-[#eef4f1] text-slate-800">
+      <div className="sticky top-0 z-10 bg-[#eef4f1]/95 backdrop-blur border-b border-slate-200">
         <div className="px-3 py-2 flex items-center gap-2">
-          <Link to="/" className="text-teal-400 text-sm shrink-0" aria-label="戻る">
+          <Link to="/" className="text-teal-600 text-sm shrink-0" aria-label="戻る">
             ←
           </Link>
           <h1 className="text-base font-bold tracking-wider flex-1 truncate">
-            <span className="text-teal-400">{machine.shortName}</span>
-            <span className="text-stone-400 text-xs ml-2">{machine.name}</span>
+            <span className="text-teal-600">{machine.shortName}</span>
+            <span className="text-slate-500 text-xs ml-2">{machine.name}</span>
           </h1>
           <button
             onClick={() => toggleFavorite(machine.id)}
             aria-label={fav ? 'お気に入り解除' : 'お気に入り追加'}
-            className={`text-lg shrink-0 ${fav ? 'text-teal-400' : 'text-stone-600'}`}
+            className={`text-lg shrink-0 ${fav ? 'text-teal-600' : 'text-slate-400'}`}
           >
             {fav ? '★' : '☆'}
           </button>
@@ -77,8 +77,8 @@ export default function MachineDetail() {
                 onClick={() => setTab(t.id)}
                 className={`px-3 py-1.5 text-xs whitespace-nowrap rounded-sm border ${
                   tab === t.id
-                    ? 'bg-teal-900/60 border-teal-400 text-white'
-                    : 'bg-[#131c18] border-teal-900/30 text-stone-400'
+                    ? 'bg-teal-600 border-teal-600 text-white'
+                    : 'bg-[#ffffff] border-slate-200 text-slate-500'
                 }`}
               >
                 {t.id === 'shotai' ? machine.hintsLabel || '示唆' : t.label}
@@ -97,12 +97,12 @@ export default function MachineDetail() {
 
             {tab === 'nerai' && (
               <div className="space-y-2">
-                <div className="text-xs text-stone-400 mb-2">複数ソース集約の狙い目早見</div>
+                <div className="text-xs text-slate-500 mb-2">複数ソース集約の狙い目早見</div>
                 {machine.neraiQuick?.map((n, i) => (
-                  <div key={i} className="bg-[#131c18] rounded p-3 border border-teal-900/30">
-                    <div className="text-sm font-bold text-teal-400">{n.type}</div>
-                    <div className="text-base text-white mt-1">{n.threshold}</div>
-                    <div className="text-xs text-stone-400 mt-1">{n.note}</div>
+                  <div key={i} className="bg-[#ffffff] rounded p-3 border border-slate-200">
+                    <div className="text-sm font-bold text-teal-600">{n.type}</div>
+                    <div className="text-base text-slate-900 mt-1">{n.threshold}</div>
+                    <div className="text-xs text-slate-500 mt-1">{n.note}</div>
                   </div>
                 ))}
               </div>
@@ -118,11 +118,11 @@ export default function MachineDetail() {
 
             {tab === 'zen' && (
               <div className="space-y-2">
-                <div className="text-xs text-stone-400 mb-2">液晶規定G到達時の前兆発生有無でモード示唆</div>
+                <div className="text-xs text-slate-500 mb-2">液晶規定G到達時の前兆発生有無でモード示唆</div>
                 {machine.zenchoPatterns?.map((z, i) => (
-                  <div key={i} className="bg-[#131c18] rounded p-3 border border-teal-900/30">
-                    <div className="text-sm font-bold text-teal-400">{z.g}</div>
-                    <div className="text-xs text-stone-300 mt-1">{z.pattern}</div>
+                  <div key={i} className="bg-[#ffffff] rounded p-3 border border-slate-200">
+                    <div className="text-sm font-bold text-teal-600">{z.g}</div>
+                    <div className="text-xs text-slate-600 mt-1">{z.pattern}</div>
                   </div>
                 ))}
               </div>

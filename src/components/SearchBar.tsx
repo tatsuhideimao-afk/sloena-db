@@ -11,7 +11,7 @@ export default function SearchBar({ onSearch, value }: Props) {
         value={value}
         onChange={(e) => onSearch(e.target.value)}
         placeholder="機種名で検索 (例: グール, 北斗)"
-        className="w-full bg-[#131c18] border border-teal-900/30 rounded-lg px-4 py-3 text-sm text-stone-100 placeholder-stone-500 focus:border-teal-400 focus:outline-none"
+        className="w-full bg-[#ffffff] border border-slate-200 rounded-lg px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:border-teal-500 focus:outline-none"
       />
     </div>
   );
