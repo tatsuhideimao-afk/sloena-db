@@ -34,7 +34,13 @@ export default function ExpectedValueCalculator({ machine }: { machine: Machine 
 
   const tableKeyFor = (c: Ceiling): string | undefined => {
     if (!evTables) return undefined;
-    return Object.keys(evTables).find((k) => c.name.startsWith(k));
+    const keys = Object.keys(evTables);
+    // 完全一致を優先
+    const exact = keys.find((k) => k === c.name);
+    if (exact) return exact;
+    // 前方一致は境界が「間」または「(」の場合のみ採用。
+    // (例: 天井"GG間"→"GG"。"CZスルー"が"CZ"を誤って掴むのを防ぐ)
+    return keys.find((k) => c.name.startsWith(k) && ['間', '('].includes(c.name.charAt(k.length)));
   };
 
   const corrections = machine.corrections;

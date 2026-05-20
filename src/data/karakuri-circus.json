@@ -1,0 +1,132 @@
+{
+  "id": "karakuri-circus",
+  "name": "スマスロからくりサーカス",
+  "shortName": "からくり",
+  "manufacturer": "SANKYO",
+  "introDate": "2023-07-03",
+  "installations": 10000,
+  "lastUpdated": "2026-05-20",
+  "status": "ready",
+  "iconColor": "#b91c1c",
+  "hintsLabel": "セリフ/ワイプ",
+  "sources": [
+    { "name": "なな徹", "url": "https://nana-press.com/kaiseki/machine/571/21225/" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/sankyo-slot/187795/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/karakurisa-kas-tenjyou/" },
+    { "name": "たられば(note)", "url": "https://note.com/g1slotapple/n/n4ff6f23842cc" },
+    { "name": "DMMぱちタウン", "url": "https://p-town.dmm.com/specials/3110" },
+    { "name": "エナイキ", "url": "https://enaiki.com/" }
+  ],
+  "spec": {
+    "type": "AT",
+    "pureZou": 2.8,
+    "coinSpeed": 32.9,
+    "atRate": "1/294.3(初当たり/たられば実戦)",
+    "tImashi": "メインAT純増2.8枚/G、上位AT「超からくりサーカス」純増7.6枚、初当たり平均約482枚(たられば実戦)、AT平均約823枚、コイン単価約4.1円(設1)"
+  },
+  "ceilings": [
+    {
+      "name": "CZ間",
+      "unit": "液晶G",
+      "max": 1200,
+      "source": "メニュー/液晶左上",
+      "note": "通常時マリオネット演舞でG数加算あり、平均730実G(液晶1200G)で天井到達"
+    },
+    {
+      "name": "CZスルー",
+      "unit": "回",
+      "max": 4,
+      "source": "データカウンタ/グラフ",
+      "note": "CZ4回連続失敗で5回目AT確定"
+    },
+    {
+      "name": "AT間",
+      "unit": "実G",
+      "max": 2500,
+      "source": "データカウンタ",
+      "note": "AT+激情ジャッジ1回成功保証"
+    }
+  ],
+  "evTables": {
+    "CZ": {
+      "equiv": [[0,-1500],[100,-1100],[200,-650],[300,-100],[400,650],[500,1500],[600,2500],[700,3650],[800,4950],[900,6400],[1000,8000],[1100,9800]],
+      "rate56": [[0,-2400],[100,-2000],[200,-1550],[300,-1000],[400,-250],[500,600],[600,1600],[700,2750],[800,4050],[900,5500],[1000,7100],[1100,8900]]
+    },
+    "AT": {
+      "equiv": [[0,-2200],[300,-1500],[500,-900],[800,-100],[1000,500],[1300,1500],[1500,2400],[1800,3800],[2000,5000],[2300,6800]],
+      "rate56": [[0,-3300],[300,-2600],[500,-2000],[800,-1200],[1000,-600],[1300,400],[1500,1300],[1800,2700],[2000,3900],[2300,5700]]
+    }
+  },
+  "modes": [
+    { "name": "通常A", "zones": "100/300/500G", "tenjo": "液晶1200G", "note": "ハマりやすい基本モード、奇数百ゾーン" },
+    { "name": "通常B", "zones": "200/400/600G", "tenjo": "液晶1200G", "note": "偶数百ゾーン" },
+    { "name": "通常C", "zones": "300G", "tenjo": "液晶1200G", "note": "300G到達時点でAT直撃濃厚" },
+    { "name": "天国", "zones": "100G以内", "tenjo": "液晶100G+α", "note": "100G以内当選濃厚、AT終了後は必ず100Gフォロー" }
+  ],
+  "hints": [
+    { "text": "鳴海&ワイプ(白)", "type": "終了画面デフォルト", "detail": "示唆なし(基本)", "priority": 0 },
+    { "text": "勝&ワイプ", "type": "終了画面", "detail": "通常B以上濃厚=偶数百ゾーン狙い", "priority": 2 },
+    { "text": "しろがね", "type": "終了画面", "detail": "通常C以上濃厚=300Gフォロー推奨", "priority": 3 },
+    { "text": "リーゼ(猛獣使い)", "type": "終了画面", "detail": "次回CZモード期待度UP", "priority": 3 },
+    { "text": "アンジェリーナ", "type": "終了画面", "detail": "天国濃厚=100G+αまでフォロー必須", "priority": 5 },
+    { "text": "コロンビーヌ", "type": "終了画面", "detail": "設定示唆/高設定示唆系", "priority": 3 },
+    { "text": "フランシーヌ人形", "type": "終了画面", "detail": "上位AT「超からくりサーカス」突入示唆/設定示唆", "priority": 4 },
+    { "text": "「準備…完了」", "type": "セリフ", "detail": "通常C濃厚=AT直撃当選確定", "priority": 5 },
+    { "text": "「フェイスレス…」系", "type": "セリフ", "detail": "高ステージ示唆/前兆期待度UP", "priority": 2 },
+    { "text": "ワイプ:赤系", "type": "ワイプ演出", "detail": "規定G数短縮示唆/次回CZ天井短縮の可能性", "priority": 2 },
+    { "text": "ワイプ:虹/金", "type": "ワイプ演出", "detail": "天国濃厚クラス", "priority": 5 }
+  ],
+  "endCards": [
+    { "char": "鳴海&ワイプ(白)", "detail": "デフォルト、示唆なし", "priority": 0 },
+    { "char": "勝&ワイプ", "detail": "通常B以上(偶数百ゾーン)濃厚", "priority": 2 },
+    { "char": "しろがね", "detail": "通常C以上濃厚→300Gフォロー", "priority": 3 },
+    { "char": "リーゼ", "detail": "次回CZモード期待度UP", "priority": 3 },
+    { "char": "アンジェリーナ", "detail": "天国濃厚→100G+αフォロー必須", "priority": 5 },
+    { "char": "フランシーヌ人形", "detail": "上位AT/設定示唆級", "priority": 4 }
+  ],
+  "endCardsSetting": [
+    { "color": "デフォルト(鳴海&ワイプ白)", "chars": "鳴海", "detail": "示唆なし" },
+    { "color": "高設定示唆(弱)", "chars": "コロンビーヌ, リーゼ", "detail": "高設定示唆弱" },
+    { "color": "高設定示唆(強)", "chars": "フランシーヌ人形(特定パターン)", "detail": "上位AT突入示唆兼設定示唆" },
+    { "color": "天国/状態示唆", "chars": "アンジェリーナ", "detail": "天国モード濃厚" }
+  ],
+  "zenchoPatterns": [
+    { "g": "液晶100G", "pattern": "天国ゾーン本前兆、AT終了直後は必ず100Gまでフォロー" },
+    { "g": "液晶200/400/600G", "pattern": "通常B(偶数百)ゾーン、勝&ワイプ後はここまで追う" },
+    { "g": "液晶300G", "pattern": "通常C濃厚時はAT直撃濃厚の本前兆" },
+    { "g": "液晶300/500G", "pattern": "通常A(奇数百)ゾーン" },
+    { "g": "液晶800G〜", "pattern": "AT間ハマりが深い場合、CZ書き換え抽選への期待" },
+    { "g": "液晶1100G〜", "pattern": "CZ→AT書き換え抽選+次回CZ天井300G短縮の起点、必ず到達まで打ち切る" },
+    { "g": "液晶1400G", "pattern": "AT当選確定ライン" }
+  ],
+  "neraiQuick": [
+    { "type": "CZ間天井狙い(等価/4スルー未満)", "threshold": "液晶300G〜", "note": "なな徹公表:等価300G〜プラス転換" },
+    { "type": "CZ間天井狙い(5.6枚)", "threshold": "液晶500G〜", "note": "なな徹公表:5.6枚交換500G〜プラス転換" },
+    { "type": "CZ間天井狙い(実戦推奨)", "threshold": "液晶400G〜", "note": "プラス転換+リスクバッファ込み" },
+    { "type": "CZ1〜3スルー狙い", "threshold": "液晶200G〜", "note": "スルー回数で-50〜100G調整、3スルー以降は不問で打つ" },
+    { "type": "AT間天井狙い", "threshold": "実G数1500G〜", "note": "スルー数・CZ間ハマり不問、激情ジャッジ1回保証分の上乗せあり" },
+    { "type": "1100G超え後即やめ拾い", "threshold": "次回0G(短縮済み)", "note": "前任者が1100G超え後にAT非当選でやめた台は次回CZ天井300G短縮継続(上位AT突入時はリセット)" },
+    { "type": "歯車7個近い台", "threshold": "歯車4〜6個", "note": "7個でマリオネット演舞(G加算)突入確定" }
+  ],
+  "yameRules": [
+    { "situation": "AT終了後", "action": "液晶100Gまでフォロー", "reason": "天国モード移行の可能性、終了画面で示唆確認" },
+    { "situation": "1100G超えてCZ失敗", "action": "次回液晶300Gまでフォロー", "reason": "次回CZ天井が300Gに短縮されている(駆け抜け時も引き継ぎ)" },
+    { "situation": "上位AT「超からくりサーカス」終了後", "action": "100Gフォロー後即やめ可", "reason": "短縮恩恵がリセットされる" },
+    { "situation": "終了画面アンジェリーナ", "action": "液晶100G+αまで続行", "reason": "天国濃厚" },
+    { "situation": "終了画面しろがね/勝", "action": "示唆ゾーンまでフォロー", "reason": "通常B/C濃厚で偶数百or300G当選期待" },
+    { "situation": "通常CZ4スルー", "action": "5回目CZが視野なら続行", "reason": "5回目CZでAT確定(スルー天井)" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 300, "2": 700, "3": 1500 },
+    "czRanges": {
+      "shallow": { "max": 200, "value": -300, "label": "液晶200G未満" },
+      "deep": { "min": 1100, "value": 1500, "label": "液晶1100G以上(書き換え抽選圏)" }
+    },
+    "options": [
+      { "id": "at_haijo_1500", "label": "AT間1500G以上ハマり", "value": 800 },
+      { "id": "atu1100_keizoku", "label": "前回1100G超えAT非当選(次回CZ天井300G短縮継続)", "value": 1200 },
+      { "id": "tenkoku_shisaa", "label": "終了画面アンジェリーナ(天国濃厚)", "value": 1000 },
+      { "id": "haguruma_near", "label": "歯車4〜6個(マリオネット演舞近い)", "value": 400 }
+    ]
+  }
+}

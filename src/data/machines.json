@@ -102,34 +102,34 @@
     "id": "karakuri-circus",
     "name": "スマスロからくりサーカス",
     "shortName": "からくり",
-    "manufacturer": "ニューギン",
-    "introDate": "2023-06-19",
-    "installations": 3800,
+    "manufacturer": "SANKYO",
+    "introDate": "2023-07-03",
+    "installations": 10000,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
-    "iconColor": "#a855f7"
+    "status": "ready",
+    "iconColor": "#b91c1c"
   },
   {
-    "id": "god-eater",
+    "id": "godeater-resurrection",
     "name": "スマスロゴッドイーター リザレクション",
     "shortName": "ゴッドイーター",
-    "manufacturer": "山佐",
+    "manufacturer": "山佐(セブンリーグ)",
     "introDate": "2024-07-22",
-    "installations": 3500,
+    "installations": 10000,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
-    "iconColor": "#dc2626"
+    "status": "ready",
+    "iconColor": "#7c3aed"
   },
   {
     "id": "magia-record",
-    "name": "スマスロマギアレコード",
+    "name": "スマスロマギアレコード 魔法少女まどか☆マギカ外伝",
     "shortName": "マギレコ",
     "manufacturer": "ミズホ",
     "introDate": "2025-04-07",
-    "installations": 3400,
+    "installations": 8000,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
-    "iconColor": "#ec4899"
+    "status": "ready",
+    "iconColor": "#db2777"
   },
   {
     "id": "god-kamigami",

@@ -1,0 +1,121 @@
+{
+  "id": "godeater-resurrection",
+  "name": "スマスロゴッドイーター リザレクション",
+  "shortName": "ゴッドイーター",
+  "manufacturer": "山佐(セブンリーグ)",
+  "introDate": "2024-07-22",
+  "installations": 10000,
+  "lastUpdated": "2026-05-20",
+  "status": "ready",
+  "iconColor": "#7c3aed",
+  "hintsLabel": "アイキャッチ/セリフ",
+  "sources": [
+    { "name": "なな徹", "url": "https://nana-press.com/kaiseki/machine/767/22716/" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/godeater-resurrection-tenjou/" },
+    { "name": "altema", "url": "https://altema.jp/pachimo/lgodeater" },
+    { "name": "DMMぱちタウン", "url": "https://p-town.dmm.com/specials/3649" },
+    { "name": "ゼマ(つむつむ)", "url": "https://note.com/zema/n/n094f94523b59" },
+    { "name": "ハイエナくん", "url": "https://haienakun.com/godeater/" },
+    { "name": "Flick7", "url": "https://flick7.net/slot/godeater_r__c.php" }
+  ],
+  "spec": {
+    "type": "AT",
+    "pureZou": 2.8,
+    "coinSpeed": 31.0,
+    "atRate": "1/332.0(初当たり/スロパチクエスト実戦サンプル190万G)",
+    "tImashi": "AT「アラガミバースト」純増2.8枚/G、初当たり期待枚数約513枚、AT継続率約76%、上位ST「漆黒の捕喰者」/特化「神堕」/フェンリルファング等の大量出玉トリガーあり、コイン単価約3.7円"
+  },
+  "ceilings": [
+    {
+      "name": "ボーナス間",
+      "unit": "実G",
+      "max": 1000,
+      "source": "メニュー画面/データカウンタ",
+      "note": "1000G+α到達でAT当選(前兆経由で実質1030G前後)。設定変更時/上位ST「漆黒の捕喰者」後/ST駆け抜け後は600G+αに短縮(下記「短縮天井」チェックで補正)"
+    }
+  ],
+  "evTables": {
+    "ボーナス間": {
+      "equiv": [[0,-1300],[100,-1000],[200,-650],[300,-300],[400,150],[480,500],[500,650],[600,1300],[700,2100],[800,3050],[900,4150],[1000,5450]],
+      "rate56": [[0,-2100],[100,-1800],[200,-1450],[300,-1100],[400,-650],[500,-150],[580,300],[600,500],[700,1300],[800,2250],[900,3350],[1000,4650]]
+    },
+    "ボーナス間_short": {
+      "equiv": [[0,-700],[100,-400],[200,-50],[250,150],[300,400],[400,950],[500,1700],[600,2800]],
+      "rate56": [[0,-1500],[100,-1200],[200,-850],[250,-650],[300,-400],[400,200],[500,950],[600,2050]]
+    }
+  },
+  "modes": [
+    { "name": "通常(規定G振分)", "zones": "100/200/300/450/600/750/1000G", "tenjo": "1000G+α", "note": "規定ゲーム数到達でAT抽選、深いほど期待度UP" },
+    { "name": "短縮(リセット/上位ST後/駆け抜け)", "zones": "100/200/300/450/600G", "tenjo": "600G+α", "note": "天井が600Gまで短縮、狙い目浅め" },
+    { "name": "逆鱗ハンニバル敗北後", "zones": "100G濃厚", "tenjo": "100G+α相当", "note": "100Gゾーン当選率が大幅UP" }
+  ],
+  "hints": [
+    { "text": "アイキャッチ:男女交互(デフォルト)", "type": "アイキャッチ", "detail": "示唆なし(基本パターン)", "priority": 0 },
+    { "text": "アイキャッチ:男キャラ連続", "type": "アイキャッチ", "detail": "早めのゾーン当選期待度UP", "priority": 2 },
+    { "text": "アイキャッチ:女キャラ連続", "type": "アイキャッチ", "detail": "早めのゾーン当選期待度UP", "priority": 2 },
+    { "text": "アイキャッチ:ユウ(連続演出失敗後)", "type": "アイキャッチ", "detail": "復活期待度示唆", "priority": 3 },
+    { "text": "アイキャッチ:炎", "type": "アイキャッチ", "detail": "レア役示唆/期待度UP", "priority": 2 },
+    { "text": "アイキャッチ:リンドウ", "type": "アイキャッチ", "detail": "100G/300Gゾーン期待度UP", "priority": 3 },
+    { "text": "セリフ:赤文字(AT後99G以内)", "type": "セリフ", "detail": "100G選択率大幅UP=100Gフォロー必須", "priority": 4 },
+    { "text": "セリフ:リンドウ/レン", "type": "セリフ", "detail": "規定G数示唆", "priority": 2 },
+    { "text": "セリフ:最大G数否定", "type": "セリフ", "detail": "1000G天井否定=深追い不要の示唆", "priority": 2 },
+    { "text": "終了画面:バカンスモード", "type": "終了画面", "detail": "ヤメ判断の基準、設定示唆要素", "priority": 1 },
+    { "text": "ユウタイマー:6スタート", "type": "演出", "detail": "AT非当選なら設定6濃厚", "priority": 5 },
+    { "text": "リール左タイマー出現", "type": "作戦区域中演出", "detail": "本前兆ほぼ濃厚", "priority": 4 }
+  ],
+  "endCards": [
+    { "char": "バカンスモード(キャラ別)", "detail": "ヤメ判断・設定示唆要素、AT終了後は必ず確認", "priority": 2 },
+    { "char": "リンドウ系", "detail": "100/300Gゾーン期待度UP系", "priority": 3 },
+    { "char": "ユウ復活系", "detail": "復活期待度示唆", "priority": 3 },
+    { "char": "高設定示唆キャラ", "detail": "なな徹/altema詳細参照、実践値待ち", "priority": 4 }
+  ],
+  "endCardsSetting": [
+    { "color": "デフォルト", "chars": "通常キャラ", "detail": "示唆なし" },
+    { "color": "高設定示唆", "chars": "詳細はなな徹・altema最新版を参照", "detail": "実践値待ち" },
+    { "color": "ユウタイマー6スタート", "chars": "ユウ", "detail": "AT非当選で設定6濃厚" }
+  ],
+  "zenchoPatterns": [
+    { "g": "100G", "pattern": "天国相当ゾーン、AT後/短縮天井時の重要ゾーン" },
+    { "g": "200G", "pattern": "規定G振分の1つ、期待度中" },
+    { "g": "300G", "pattern": "規定G振分の1つ、リンドウアイキャッチ後の本前兆期待" },
+    { "g": "450G", "pattern": "規定G振分、短縮天井時の中間ゾーン" },
+    { "g": "600G", "pattern": "規定G振分+短縮天井、駆け抜け後はここで当選濃厚" },
+    { "g": "750G", "pattern": "規定G振分、通常天井前の最終ゾーン" },
+    { "g": "1000G", "pattern": "通常時最大天井、+前兆30G前後" }
+  ],
+  "neraiQuick": [
+    { "type": "通常天井狙い(等価)", "threshold": "実G数500G〜", "note": "なな徹公表:等価500G〜プラス転換(暫定)" },
+    { "type": "通常天井狙い(5.6枚)", "threshold": "実G数600G〜", "note": "なな徹公表:5.6枚600G〜プラス転換" },
+    { "type": "通常天井狙い(実戦推奨)", "threshold": "実G数580G〜", "note": "ハイエナくん推奨ライン、600Gゾーン抜け後も含む" },
+    { "type": "短縮天井狙い(等価/リセット)", "threshold": "実G数200G〜", "note": "なな徹公表:短縮時等価200Gからプラス" },
+    { "type": "短縮天井狙い(5.6枚/リセット)", "threshold": "実G数250G〜", "note": "なな徹公表:短縮時5.6枚250Gからプラス" },
+    { "type": "ST駆け抜け即やめ狙い", "threshold": "実G数280G〜", "note": "実戦上600G+α短縮で狙える、前回1101枚未満を確認" },
+    { "type": "上位ST「漆黒の捕喰者」後", "threshold": "実G数280G〜", "note": "天井600G+αに短縮" },
+    { "type": "逆鱗ハンニバル敗北後", "threshold": "0G〜", "note": "100Gゾーン当選率大幅UP=即拾い" },
+    { "type": "100Gゾーン狙い", "threshold": "実G数40G〜", "note": "AT後赤セリフ出現時は特に強い" },
+    { "type": "300Gゾーン狙い", "threshold": "実G数245G〜", "note": "リンドウアイキャッチ出現時は強化" }
+  ],
+  "yameRules": [
+    { "situation": "AT終了後", "action": "バカンスモード/終了画面確認後即やめ", "reason": "天井は前回ST種別で短縮判定、短縮台なら次回100Gフォロー検討" },
+    { "situation": "ST駆け抜け(前回1101枚未満)", "action": "次回も狙い目台→続行", "reason": "天井600G+αに短縮されている可能性大(実戦上)" },
+    { "situation": "上位ST「漆黒の捕喰者」終了後", "action": "短縮天井圏なら続行", "reason": "天井600G+αに短縮確定" },
+    { "situation": "逆鱗ハンニバル敗北後", "action": "100G+αまで続行", "reason": "100Gゾーン当選率が大幅UP" },
+    { "situation": "AT後赤セリフ(99G以内)", "action": "100G+αまで必須フォロー", "reason": "100G選択率が大幅UPする示唆" },
+    { "situation": "通常天井到達(前回1000G到達)", "action": "次回ボーダーを下げて狙う", "reason": "天井経由は内部状態優遇の可能性" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 200, "2": 500, "3": 900 },
+    "czRanges": {
+      "shallow": { "max": 100, "value": -150, "label": "100G未満(ゾーン抜け前)" },
+      "deep": { "min": 600, "value": 400, "label": "600G以上(600Gゾーン後の深追い)" }
+    },
+    "options": [
+      { "id": "tanshuku_short", "label": "前回駆け抜け/上位ST後(短縮天井600G)", "value": 800 },
+      { "id": "hannibal_haiboku", "label": "逆鱗ハンニバル敗北後(100G濃厚)", "value": 1500 },
+      { "id": "aka_serif", "label": "AT後赤セリフ(100G選択率UP)", "value": 700 },
+      { "id": "rindo_eyecatch", "label": "リンドウアイキャッチ(100/300G強化)", "value": 400 },
+      { "id": "henshoku_factor", "label": "偏食因子蓄積期待(初当40回相当)", "value": 300 }
+    ]
+  }
+}

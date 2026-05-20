@@ -1,0 +1,117 @@
+{
+  "id": "magia-record",
+  "name": "スマスロマギアレコード 魔法少女まどか☆マギカ外伝",
+  "shortName": "マギレコ",
+  "manufacturer": "ミズホ",
+  "introDate": "2025-04-07",
+  "installations": 8000,
+  "lastUpdated": "2026-05-20",
+  "status": "ready",
+  "iconColor": "#db2777",
+  "hintsLabel": "アイキャッチ/ステージ",
+  "sources": [
+    { "name": "なな徹", "url": "https://nana-press.com/kaiseki/machine/914/28426/" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/universal-slot/magireco/235670/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/magireco-tenjou/" },
+    { "name": "ツラヌキメソッド", "url": "https://tsuranuki-method.com/expected-value-about-limit/lmagireco/" },
+    { "name": "ハイエナくん", "url": "https://haienakun.com/magia_record/" },
+    { "name": "Flick7", "url": "https://flick7.net/slot/magireco__c.php" },
+    { "name": "のりへい note", "url": "https://note.com/norihey_01/n/n4a5e1a956be6" },
+    { "name": "アミュタメ", "url": "https://www.amuse-p.com/blog/magireco-revew/" }
+  ],
+  "spec": {
+    "type": "AT(ボーナス経由)",
+    "pureZou": 2.6,
+    "coinSpeed": 32.6,
+    "atRate": "ボーナス経由のAT「マギアラッシュ」、AT初当たり期待枚数約780枚(EP BONUS時900枚、ドッペル時3000枚以上)",
+    "tImashi": "ポイント管理型ボーナス間天井、純増2.6枚/G、1G=1pt以上(平均1.5〜2.0pt)、穢れシステム100ptで解放→エピソードボーナス/アリナミュージアム、上位ST型上乗せ「決戦神浜聖女」、エンブリオ・イブ覚醒(8ストーリー獲得)、AT間天井なし"
+  },
+  "ceilings": [
+    {
+      "name": "ボーナス間",
+      "unit": "マギアpt",
+      "max": 950,
+      "source": "液晶右ポイント表示",
+      "note": "最大950pt+αでボーナス当選(BB or みたまボーナス、AT直結ではない)。設定変更時600〜699pt+αに短縮(下記「短縮天井」チェックで補正)。横軸はマギアpt(1G≒1.5〜2.0pt)"
+    }
+  ],
+  "evTables": {
+    "ボーナス間": {
+      "equiv": [[0,-1800],[100,-1500],[200,-1100],[300,-650],[400,-100],[500,500],[600,1300],[700,2300],[800,3500],[900,5000]],
+      "rate56": [[0,-2700],[100,-2400],[200,-2000],[300,-1550],[400,-1000],[500,-400],[600,400],[700,1400],[800,2600],[900,4100]]
+    },
+    "ボーナス間_short": {
+      "equiv": [[0,-1100],[100,-800],[150,-500],[200,-200],[300,400],[400,1100],[500,2000],[600,3200]],
+      "rate56": [[0,-1900],[100,-1600],[200,-1000],[300,-400],[400,300],[500,1200],[600,2400]]
+    }
+  },
+  "modes": [
+    { "name": "魔法少女モード(6種)", "zones": "200/400/600pt", "tenjo": "950pt+α", "note": "アイキャッチ等で示唆、いろは以外なら高設定示唆" },
+    { "name": "通常時(汎用)", "zones": "200/400/600pt", "tenjo": "950pt+α", "note": "ptは1Gで1pt以上、倍ptゾーンで2〜10倍加算" },
+    { "name": "短縮(リセット時)", "zones": "なし(初期pt内部加算でブレ)", "tenjo": "600〜699pt+α", "note": "朝一はptが「???」表示、1回目前兆後に表示" }
+  ],
+  "hints": [
+    { "text": "アイキャッチ:ソウルジェム(強発光なし)", "type": "アイキャッチ", "detail": "規定pt到達の期待度UP示唆(濃厚ではない)", "priority": 2 },
+    { "text": "アイキャッチ:ソウルジェム(強発光)", "type": "アイキャッチ", "detail": "規定pt到達濃厚→続行確定", "priority": 5 },
+    { "text": "アイキャッチ:黒背景ソウルジェム", "type": "アイキャッチ", "detail": "穢れ示唆/特殊示唆系", "priority": 4 },
+    { "text": "ステージ:みかづき荘", "type": "前兆ステージ", "detail": "高確示唆/穢れ50pt以上獲得期待", "priority": 3 },
+    { "text": "ステージ:ポイント倍ゾーン", "type": "前兆ステージ", "detail": "獲得pt倍増チャンス", "priority": 3 },
+    { "text": "ステージ:調整屋(赤)", "type": "前兆ステージ", "detail": "本前兆濃厚クラス", "priority": 5 },
+    { "text": "ステージ:万年桜", "type": "終了後背景", "detail": "続行推奨", "priority": 4 },
+    { "text": "終了時:みかづき荘背景", "type": "終了画面", "detail": "様子見推奨、穢れ蓄積期待", "priority": 3 },
+    { "text": "CZ:マギアチャレンジ", "type": "CZ", "detail": "BAR揃いでボーナス、カットイン色で期待度変化(赤/金=チャンス)" , "priority": 3 },
+    { "text": "CZ:黒江チャレンジ", "type": "上位CZ", "detail": "突入時点でAT濃厚", "priority": 5 },
+    { "text": "サブ液晶タッチ:黒エフェクト/特殊セリフ", "type": "穢れ示唆", "detail": "穢れ蓄積示唆、AT間ハマり台で重要", "priority": 4 }
+  ],
+  "endCards": [
+    { "char": "みかづき荘背景", "detail": "様子見、穢れ蓄積期待で続行検討", "priority": 3 },
+    { "char": "万年桜背景", "detail": "続行推奨", "priority": 4 },
+    { "char": "通常背景", "detail": "そのままヤメで問題なし", "priority": 1 },
+    { "char": "ドッペルモード突入", "detail": "期待枚数3000枚以上、絶対に続行", "priority": 5 }
+  ],
+  "endCardsSetting": [
+    { "color": "通常", "chars": "デフォルトキャラ", "detail": "示唆なし" },
+    { "color": "高設定示唆(モード)", "chars": "いろは以外", "detail": "AT非当選時の魔法少女モードがいろは以外なら高設定示唆" },
+    { "color": "水着画面/キュゥべえ等", "chars": "詳細はちょんぼりすた最新版参照", "detail": "設定示唆級(実践値待ち)" }
+  ],
+  "zenchoPatterns": [
+    { "g": "200pt", "pattern": "ゾーン1、ボーナス当選チャンス" },
+    { "g": "400pt", "pattern": "ゾーン2、200ptで非当選時はここまで追う" },
+    { "g": "600pt", "pattern": "ゾーン3、ボーナス期待度高、狙い目はここから" },
+    { "g": "700pt〜", "pattern": "天井圏内、穢れ蓄積も期待でき続行価値あり" },
+    { "g": "950pt", "pattern": "天井ボーナス確定" }
+  ],
+  "neraiQuick": [
+    { "type": "ボーナス間天井狙い(等価)", "threshold": "600pt〜", "note": "必勝本/各サイト推奨ライン、500pt台は期待値薄い" },
+    { "type": "ボーナス間天井狙い(5.6枚)", "threshold": "650pt〜", "note": "等価より50pt厳しめに" },
+    { "type": "リセット天井狙い(等価)", "threshold": "150G(225pt)〜", "note": "なな徹公表:設定変更時短縮天井狙いライン" },
+    { "type": "リセット天井狙い(5.6枚)", "threshold": "200G(300pt)〜", "note": "なな徹公表:5.6枚交換時の短縮天井狙いライン" },
+    { "type": "ボーナススルー狙い", "threshold": "スルー回数×減算で浅め可", "note": "スルー1回ごと-100pt目安(優遇時は0スでも浅打ち可)" },
+    { "type": "穢れ蓄積狙い", "threshold": "AT間ハマり1300G超え/みたまボーナス連続当選台", "note": "穢れ100pt到達で解放=AT濃厚契機" },
+    { "type": "有利切れ狙い", "threshold": "有利区間リセット直前", "note": "エンブリオ・イブ覚醒突入" },
+    { "type": "ゾーン狙い(600pt)", "threshold": "550pt〜", "note": "600ptゾーン狙い、駆け抜け時の影響に注意" }
+  ],
+  "yameRules": [
+    { "situation": "ボーナス当選後", "action": "1G回してやめ(BB/EP BONUS終了後即やめ)", "reason": "ボーナス後は基本即やめ可" },
+    { "situation": "みたまボーナス終了後", "action": "平均15G消化してやめ", "reason": "前兆確認のため" },
+    { "situation": "終了画面:万年桜背景", "action": "続行", "reason": "高期待度示唆" },
+    { "situation": "終了画面:みかづき荘背景", "action": "様子見(50G〜100G程度)", "reason": "高確示唆+穢れ蓄積期待" },
+    { "situation": "終了画面:その他通常背景", "action": "即やめ可", "reason": "示唆なし" },
+    { "situation": "AT非当選で魔法少女モードがいろは", "action": "即やめ寄り", "reason": "高設定示唆が出ていない=深追い不要" },
+    { "situation": "穢れ「発動済み(解放後)」台", "action": "深追いしない", "reason": "次回穢れ恩恵が遠い=期待値低下" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 250, "2": 600, "3": 1200 },
+    "czRanges": {
+      "shallow": { "max": 200, "value": -200, "label": "200pt未満" },
+      "deep": { "min": 700, "value": 400, "label": "700pt以上" }
+    },
+    "options": [
+      { "id": "kegare_chikuseki", "label": "穢れ蓄積期待(AT間1300G超え/みたま連続)", "value": 800 },
+      { "id": "reset_short", "label": "リセット台(短縮天井600〜699pt)", "value": 600 },
+      { "id": "yuri_kire_chikai", "label": "有利切れ近い(エンブリオ・イブ覚醒圏)", "value": 1000 },
+      { "id": "kakenuke", "label": "前回AT駆け抜け(穢れ蓄積期待)", "value": 400 },
+      { "id": "soul_jem_kyou", "label": "ソウルジェム強発光示唆出現", "value": 700 }
+    ]
+  }
+}
