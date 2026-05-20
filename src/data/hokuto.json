@@ -1,0 +1,122 @@
+{
+  "id": "hokuto",
+  "name": "スマスロ北斗の拳",
+  "shortName": "北斗",
+  "manufacturer": "サミー",
+  "introDate": "2023-04-03",
+  "installations": 5634,
+  "lastUpdated": "2026-05-20",
+  "status": "ready",
+  "iconColor": "#7c2d12",
+  "hintsLabel": "演出示唆",
+  "sources": [
+    { "name": "altema", "url": "https://altema.jp/pachimo/lhokutotenjo" },
+    { "name": "なな徹", "url": "https://nana-press.com/kaiseki/machine/514/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/lhokutonoken-tenjou/" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/sammy-slot/181626/" },
+    { "name": "ハイエナくん", "url": "https://haienakun.com/hokutonoken/" },
+    { "name": "DMMぱちタウン", "url": "https://p-town.dmm.com/specials/2949" },
+    { "name": "だくお(note大量実戦値)", "url": "https://note.com/dakuo_slot/n/n083ade44913e" },
+    { "name": "エナイキ", "url": "https://enaiki.com/" }
+  ],
+  "spec": {
+    "type": "AT",
+    "pureZou": 4.1,
+    "coinSpeed": 35,
+    "atRate": "1/345.0(実戦値)",
+    "machineRate": "97.5%〜114.6%(設定6)",
+    "tImashi": "AT「バトルボーナス」純増約4.1枚(小役パート)、1セット約110枚、継続率66/72/79/84/89%の5種。中段チェリー激アツ、無想転生バトル94%ループ。有利区間切断時はBB継続率84%以上再セット(ツラヌキスペック改)"
+  },
+  "ceilings": [
+    {
+      "name": "ゲーム数",
+      "unit": "実G数",
+      "max": 1268,
+      "source": "液晶ゲーム数",
+      "note": "通常1268G+α(前兆最大32G=実質1300G)、設定変更時800G+αに短縮"
+    }
+  ],
+  "evTables": {
+    "ゲーム数": {
+      "equiv": [[0,-3000],[100,-2700],[200,-2200],[300,-1700],[400,-1000],[500,-200],[600,800],[700,2000],[800,3400],[900,5000],[1000,6800],[1100,8800],[1200,11000],[1268,12700]],
+      "rate56": [[0,-5500],[100,-5200],[200,-4700],[300,-4200],[400,-3500],[500,-2700],[600,-1700],[700,-500],[800,900],[900,2500],[1000,4300],[1100,6300],[1200,8500],[1268,10200]],
+      "note": "altema基準:等価400G〜・5.6円700G〜プラス、+1000円ライン等価700G/5.6円800G"
+    },
+    "ゲーム数_reset": {
+      "equiv": [[0,500],[100,1200],[200,2000],[300,3000],[400,4200],[500,5600],[600,7200],[700,9000],[800,11000]],
+      "rate56": [[0,-1800],[100,-1100],[200,-300],[300,700],[400,1900],[500,3300],[600,4900],[700,6700],[800,8700]],
+      "note": "リセット時(800G短縮天井)の合算期待値。リセット恩恵で期待獲得867枚と通常より優遇"
+    }
+  },
+  "modes": [
+    { "name": "地獄", "zones": "天井依存", "tenjo": "1268G", "note": "ハマりやすい、レア役で通常モード移行を目指す" },
+    { "name": "通常", "zones": "300G/777G/800G短縮抽選", "tenjo": "1268G", "note": "標準モード、スイカ/チャンス目で天国移行抽選" },
+    { "name": "天国", "zones": "0-128G以内当選期待", "tenjo": "1268G", "note": "前兆移行率1/125、初当り期待32%、機械割126%(だくお考察)" },
+    { "name": "リセット(設定変更時)", "zones": "300G/777G短縮", "tenjo": "800G+α", "note": "リセット時の専用天井、北斗揃い期待度+BB継続率優遇あり" }
+  ],
+  "hints": [
+    { "text": "ランプ矛盾", "type": "天国以上確定", "detail": "天国モード以上確定の最強示唆", "priority": 5 },
+    { "text": "青オーラ大", "type": "天国以上確定", "detail": "天国確定パターン", "priority": 5 },
+    { "text": "ステージチェンジ稲妻大", "type": "天国以上確定", "detail": "天国モード確定", "priority": 5 },
+    { "text": "雑魚に北斗百裂拳", "type": "天国以上確定", "detail": "天国確定演出", "priority": 5 },
+    { "text": "キャラ登場演出でレイ無想転生", "type": "天国以上確定", "detail": "天国確定", "priority": 5 },
+    { "text": "青雑魚に奥義", "type": "天国以上確定", "detail": "天国濃厚", "priority": 5 },
+    { "text": "第3停止ケンシロウ見渡し/振り向きでリプレイ", "type": "天国以上確定", "detail": "天国確定の特殊演出", "priority": 5 },
+    { "text": "断末魔「ヘブン!」or「あぢぢ〜」", "type": "天国以上確定", "detail": "天国確定セリフ", "priority": 5 },
+    { "text": "リン第3停止つまづくor転ぶ", "type": "天国以上の期待大", "detail": "天国期待度大幅UP", "priority": 4 },
+    { "text": "バット第3停止で青缶3つ/白缶3つ/赤リンゴ3つ", "type": "天国以上の期待大", "detail": "天国期待UP", "priority": 4 },
+    { "text": "ケンシロウ第3停止で見渡し/振り向き", "type": "天国期待", "detail": "天国モード期待度UP", "priority": 4 },
+    { "text": "通行人演出で第3停止服脱げる→青服", "type": "天国期待", "detail": "天国期待度UP", "priority": 4 },
+    { "text": "白雑魚に奥義", "type": "天国期待大", "detail": "天国期待度大幅UP", "priority": 4 },
+    { "text": "白オーラ大", "type": "天国期待", "detail": "天国期待度UP", "priority": 4 },
+    { "text": "断末魔「ちゃんす!」", "type": "天国期待大", "detail": "天国/通常以上両方の示唆", "priority": 4 },
+    { "text": "マミヤ・リン同時同行", "type": "天国期待", "detail": "天国期待UP演出", "priority": 4 },
+    { "text": "南斗最後の将演出で時計回り", "type": "通常以上確定", "detail": "地獄否定", "priority": 3 },
+    { "text": "白雑魚に岩山両斬波/北斗残悔拳", "type": "通常以上確定", "detail": "地獄否定", "priority": 3 },
+    { "text": "中段チェリー", "type": "プレミア", "detail": "AT当選大チャンス、北斗揃い期待", "priority": 5 },
+    { "text": "北斗カウンタ作動", "type": "初当り期待", "detail": "対応役成立で作動、初当り期待UP", "priority": 4 }
+  ],
+  "endCards": [
+    { "char": "ケンシロウ", "detail": "デフォルト、特に示唆なし", "priority": 1 },
+    { "char": "ラオウ", "detail": "デフォルト、設定示唆ボイスと併用判断", "priority": 1 },
+    { "char": "AT終了時ボイス(基本)", "detail": "デフォルトボイス、即ヤメ可", "priority": 1 },
+    { "char": "AT終了時ボイス(高設定示唆)", "detail": "ケロットトロフィー併用で高設定判別", "priority": 4 },
+    { "char": "777G短縮天井到達", "detail": "北斗揃い濃厚、BB継続率優遇", "priority": 5 }
+  ],
+  "zenchoPatterns": [
+    { "g": "300G", "pattern": "天井短縮抽選ポイント(優遇なし)" },
+    { "g": "777G", "pattern": "天井短縮抽選ポイント(北斗揃い濃厚)" },
+    { "g": "800G", "pattern": "天井短縮抽選ポイント、リセット時はここが天井" },
+    { "g": "1268G+α", "pattern": "通常天井、北斗揃い期待度UP+BB継続率優遇" },
+    { "g": "AT後0-128G", "pattern": "天国モード時の前兆期待区間" },
+    { "g": "32G前兆", "pattern": "レア小役成立後の32G前兆" }
+  ],
+  "neraiQuick": [
+    { "type": "天井狙い(等価)", "threshold": "400G〜", "note": "altema基準、+1000円ラインは700G〜" },
+    { "type": "天井狙い(5.6円)", "threshold": "700G〜", "note": "5.6円交換基準、+1000円ラインは800G〜" },
+    { "type": "リセット狙い(等価)", "threshold": "100G〜AT当選まで", "note": "リセット恩恵で期待獲得867枚、浅くから狙える" },
+    { "type": "リセット狙い(5.6円)", "threshold": "300G〜", "note": "5.6円基準" },
+    { "type": "天国モード狙い(AT後)", "threshold": "0-128G", "note": "前兆移行率1/125、期待値1500円(だくお考察)" },
+    { "type": "ゾーン狙い(777G/800G)", "threshold": "770G〜810G", "note": "短縮抽選ポイント、777Gで北斗揃い濃厚" },
+    { "type": "条件付き通常モード狙い", "threshold": "実戦値ベース", "note": "だくおnote㊙条件参照、500G〜の根拠付き狙い" }
+  ],
+  "yameRules": [
+    { "situation": "BB(バトルボーナス)終了後", "action": "1G回して即継続演出確認", "reason": "1G連の可能性あり、必ず1G確認" },
+    { "situation": "AT後即天国前兆", "action": "AT当選まで続行確定", "reason": "天国モード濃厚" },
+    { "situation": "AT後天国モード否定", "action": "ヤメ可", "reason": "天国非滞在確認後は即ヤメ" },
+    { "situation": "AT終了時ボイスで高設定示唆", "action": "設定狙いに切替", "reason": "ボイス示唆を必ず確認" },
+    { "situation": "中段チェリー引いた", "action": "AT当選まで続行", "reason": "AT当選大チャンス" },
+    { "situation": "本前兆中天井到達", "action": "天井恩恵受けられる", "reason": "本前兆中でも1268G到達で恩恵あり" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 300, "2": 800, "3": 1500 },
+    "czRanges": {},
+    "options": [
+      { "id": "reset", "label": "リセット濃厚(設定変更後)", "value": 1000 },
+      { "id": "tengoku", "label": "天国モード示唆あり(青オーラ等)", "value": 1500 },
+      { "id": "tengokuMid", "label": "天国期待大(白オーラ等)", "value": 800 },
+      { "id": "chunkChelly", "label": "中段チェリー履歴あり", "value": 1500 },
+      { "id": "voiceHigh", "label": "AT後高設定示唆ボイス", "value": 1000 }
+    ]
+  }
+}

@@ -6,11 +6,136 @@
   "introDate": "2023-12-04",
   "installations": 4800,
   "lastUpdated": "2026-05-20",
-  "status": "preparing",
+  "status": "ready",
   "iconColor": "#0369a1",
+  "hintsLabel": "演出示唆",
   "sources": [
     { "name": "altema", "url": "https://altema.jp/pachimo/" },
-    { "name": "なな徹", "url": "https://nana-press.com/" },
-    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/" }
-  ]
+    { "name": "なな徹(立ち回り)", "url": "https://nana-press.com/kaiseki/machine/644/23068/" },
+    { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/yamasa-slot/198173/" },
+    { "name": "スロパチクエスト", "url": "https://www.slopachi-quest.com/article/monkey-turn5-tenjou/" },
+    { "name": "スロがち.COM", "url": "https://slogati.com/monkeyturn5/" },
+    { "name": "DMMぱちタウン", "url": "https://p-town.dmm.com/machines/4450" },
+    { "name": "クマぱぱ(ライバル狙い)", "url": "https://xn--x9ja8p0go69l5jtgfm.com/monkey-turn5-rival-mode-20324" },
+    { "name": "クマぱぱ(天井狙い)", "url": "https://xn--x9ja8p0go69l5jtgfm.com/monkey-turn5-tenjou-nerai-20015" },
+    { "name": "flick7(実践値)", "url": "https://flick7.net/slot/monkeyturn5__c.php" }
+  ],
+  "spec": {
+    "type": "AT",
+    "pureZou": 2.5,
+    "coinSpeed": 32,
+    "atRate": "1/345(実戦値)",
+    "machineRate": "97.4%(設定1)〜114%程度",
+    "tImashi": "AT「SGラッシュ」純増約2.5枚、上位AT「青島SG」純増約4.0枚。コイン単価約3.1円。初当たり平均約440枚。ゲーム数天井+周期天井+通常モード+ライバルモード+EXアイテムの多軸管理"
+  },
+  "ceilings": [
+    {
+      "name": "ゲーム数",
+      "unit": "実G数",
+      "max": 795,
+      "source": "液晶ゲーム数",
+      "note": "通常時最大795G+α、設定変更後/青島VS波多野敗北後は495G+αに短縮"
+    },
+    {
+      "name": "周期",
+      "unit": "周期",
+      "max": 6,
+      "source": "液晶右上カウンタ",
+      "note": "通常時最大6周期、設定変更後/上位AT敗北後は4周期に短縮"
+    }
+  ],
+  "evTables": {
+    "ゲーム数": {
+      "equiv": [[0,-2200],[100,-1900],[200,-1500],[300,-1000],[400,-300],[410,-200],[500,700],[600,1800],[700,3000],[795,4500]],
+      "rate56": [[0,-3800],[100,-3500],[200,-3100],[300,-2600],[400,-1900],[500,-900],[600,200],[700,1400],[795,2900]],
+      "note": "スロパチクエスト/たられば集計ベース、等価410G〜・5.6枚現金500G〜が106%ライン"
+    },
+    "ゲーム数_short": {
+      "equiv": [[0,300],[100,900],[200,1700],[300,2700],[400,3900],[495,5500]],
+      "rate56": [[0,-1500],[100,-900],[200,-100],[300,900],[400,2100],[495,3500]],
+      "note": "設定変更後/青島VS波多野敗北後の短縮天井(495G/4周期)時の合算期待値"
+    }
+  },
+  "modes": [
+    { "name": "通常A", "zones": "規定ポイント長め", "tenjo": "6周期", "note": "最深モード、500G以上ハマり履歴で滞在濃厚" },
+    { "name": "通常B", "zones": "規定ポイント中", "tenjo": "3周期", "note": "2周期目振り分け65%、機械割100%超え狙い目" },
+    { "name": "天国", "zones": "1周期", "tenjo": "1周期", "note": "AT後即優出モード=天国濃厚、AT当選確定" },
+    { "name": "リセット(設定変更後)", "zones": "短縮", "tenjo": "495G/4周期", "note": "30G〜AT当選まで打ち切り推奨" },
+    { "name": "上位AT後(青島VS波多野敗北後)", "zones": "短縮", "tenjo": "495G/4周期", "note": "40G〜AT当選まで、有利区間切り" }
+  ],
+  "hints": [
+    { "text": "サブ液晶ヘルメット: ロゴ+キラキラ", "type": "モード示唆", "detail": "通常Bor天国確定、AT当選まで続行必須", "priority": 5 },
+    { "text": "サブ液晶ヘルメット: Vロゴ", "type": "モード示唆", "detail": "天国確定、AT当選まで続行確定", "priority": 5 },
+    { "text": "サブ液晶ヘルメット: モノクロ波多野", "type": "ライバル", "detail": "最強B2or艇王シナリオ濃厚、AT当選まで続行", "priority": 5 },
+    { "text": "サブ液晶ヘルメット: 青島", "type": "ライバル", "detail": "青島SGスタート濃厚、AT当選まで続行", "priority": 5 },
+    { "text": "サブ液晶ヘルメット: 榎木", "type": "ライバル", "detail": "優出モード成功期待度50%以上、1周期様子見", "priority": 4 },
+    { "text": "サブ液晶ヘルメット: 蒲生", "type": "ライバル", "detail": "超抜チャレンジ突入確率UP", "priority": 4 },
+    { "text": "サブ液晶ヘルメット: 浜岡", "type": "ライバル", "detail": "規定激走ポイント最大222、1周期目熱い", "priority": 4 },
+    { "text": "EXアイテム: EXストック", "type": "ストック", "detail": "AT当選まで続行確定", "priority": 5 },
+    { "text": "EXアイテム: ペンギンストック", "type": "ストック", "detail": "AT当選まで続行確定", "priority": 5 },
+    { "text": "舟券の色: 銀", "type": "設定示唆", "detail": "設定2/4/6濃厚", "priority": 4 },
+    { "text": "舟券の色: 金", "type": "設定示唆", "detail": "設定4以上濃厚", "priority": 5 },
+    { "text": "舟券の色: 虹", "type": "設定示唆", "detail": "設定6濃厚", "priority": 5 },
+    { "text": "舟券の色: 黄(ライバル示唆)", "type": "ライバル", "detail": "最上段選手のライバルモード期待度UP(強)", "priority": 4 },
+    { "text": "激走チャージ終了画面ボイス「ここは負けられねぇ」(波多野緑)", "type": "モード示唆", "detail": "通常B以上濃厚", "priority": 5 },
+    { "text": "激走チャージ終了画面ボイス「ここからが本当の勝負よ」(青島赤)", "type": "モード示唆", "detail": "モードB以上+当該周期AT期待50%", "priority": 5 },
+    { "text": "激走チャージ終了画面ボイス「憲ちゃん頑張って」(澄紫)", "type": "モード示唆", "detail": "当該周期AT当選濃厚", "priority": 5 },
+    { "text": "激走チャージ終了画面ボイス「これが艇王と呼ばれる私のレースだ」(榎木紫)", "type": "設定示唆", "detail": "設定4以上濃厚", "priority": 5 },
+    { "text": "ステージチェンジ: 黒背景", "type": "高期待", "detail": "当該周期AT当選期待大、優出モードまで続行" },
+    { "text": "ステージチェンジ: 黒背景+ライバル", "type": "高期待", "detail": "当該周期AT期待大+ライバルモード濃厚", "priority": 5 },
+    { "text": "AT終了画面でレア役", "type": "モード昇格", "detail": "通常B以上濃厚、強レア役で天国濃厚", "priority": 5 },
+    { "text": "弱レア役からAT直撃", "type": "設定示唆", "detail": "設定4以上濃厚", "priority": 5 },
+    { "text": "ケロットトロフィー", "type": "設定示唆", "detail": "色/種類で設定示唆", "priority": 4 },
+    { "text": "黒メダル出現", "type": "設定示唆", "detail": "高設定示唆", "priority": 4 }
+  ],
+  "endCards": [
+    { "char": "ロゴ+キラキラ", "detail": "通常Bor天国確定、AT当選まで続行", "priority": 5 },
+    { "char": "Vロゴ", "detail": "天国確定、AT当選まで続行", "priority": 5 },
+    { "char": "モノクロ波多野ヘルメット", "detail": "最強シナリオ濃厚、AT当選まで続行", "priority": 5 },
+    { "char": "青島ヘルメット", "detail": "青島SGスタート濃厚、続行確定", "priority": 5 },
+    { "char": "榎木/蒲生/洞口/浜岡ヘルメット", "detail": "各ライバル恩恵あり、1周期様子見推奨", "priority": 4 },
+    { "char": "デフォルト波多野ヘルメット", "detail": "示唆なし、即優出確認後ヤメ可", "priority": 1 }
+  ],
+  "zenchoPatterns": [
+    { "g": "30-222pt(1周期目)", "pattern": "1周期目222pt以内の優出モード濃厚、平均80G" },
+    { "g": "300-666pt(2周期目以降)", "pattern": "各周期のゾーン" },
+    { "g": "規定ポイント到達G", "pattern": "優出モード前兆スタート" },
+    { "g": "50G/150G/250G…", "pattern": "舟券出現条件、ライバル示唆チェックポイント" },
+    { "g": "差枚+1400以上のAT終了後", "pattern": "有利区間切り目指せる、天国までフォロー" },
+    { "g": "AT終了直後即優出モード", "pattern": "天国濃厚+高設定期待度UP" }
+  ],
+  "neraiQuick": [
+    { "type": "天井狙い(等価)", "threshold": "410G〜 or 5周期〜", "note": "106%ライン" },
+    { "type": "天井狙い(5.6枚現金)", "threshold": "500G〜", "note": "現金投資基準" },
+    { "type": "設定変更後狙い(等価)", "threshold": "30G〜AT当選まで", "note": "短縮495G、初日104%データあり" },
+    { "type": "上位AT(青島VS波多野)敗北後", "threshold": "40G〜AT当選まで", "note": "天井短縮+有利区間リセット恩恵" },
+    { "type": "ライバルヘルメット狙い", "threshold": "種類不問・0G〜", "note": "AT当選まで打ち切りで機械割100%超え" },
+    { "type": "EXアイテム狙い", "threshold": "EXストック/ペンギン所持・0G〜", "note": "出率100%超え、天井狙い目を早められる" },
+    { "type": "差枚+1000以上1周期狙い", "threshold": "0pt〜222pt+α", "note": "高設定示唆との併用効果大" },
+    { "type": "2周期目モードB狙い", "threshold": "300pt〜", "note": "通常B時65%振り分け、設定狙いと相性良し" },
+    { "type": "リセットカニ歩き", "threshold": "0-3G", "note": "リセット直後の即引き戻し狙い" }
+  ],
+  "yameRules": [
+    { "situation": "AT終了後", "action": "1G回して即優出モード確認、サブ液晶ヘルメット確認", "reason": "即優出=天国濃厚、ヘルメット種類で続行判断" },
+    { "situation": "ヘルメット: Vロゴ/ロゴ+キラキラ", "action": "AT当選まで続行確定", "reason": "天国or通常B濃厚" },
+    { "situation": "ヘルメット: モノクロ波多野/青島", "action": "AT当選まで続行", "reason": "最強シナリオ濃厚" },
+    { "situation": "ヘルメット: 榎木/蒲生/洞口/浜岡", "action": "1周期様子見、示唆併用で押し引き", "reason": "各ライバル恩恵あり、ボイス併用判断" },
+    { "situation": "終了画面でレア役引いた", "action": "AT当選までツッパ", "reason": "モード昇格、強レア役で天国濃厚" },
+    { "situation": "ステチェン黒背景", "action": "優出モードまで続行", "reason": "当該周期AT期待大" },
+    { "situation": "差枚+1400以上で天国フォロー", "action": "1周期+天国フォロー", "reason": "有利区間切れの可能性、上位AT期待" },
+    { "situation": "EXアイテム所持中", "action": "AT当選まで続行確定", "reason": "出率100%超え" }
+  ],
+  "corrections": {
+    "sluRule": { "0": 0, "1": 200, "2": 500, "3": 1000, "5": 2000 },
+    "czRanges": {},
+    "options": [
+      { "id": "reset", "label": "リセット濃厚(設定変更後)", "value": 800 },
+      { "id": "kamiAT", "label": "上位AT(青島VS波多野)敗北後", "value": 1500 },
+      { "id": "rivalMet", "label": "ライバルヘルメット出現(モノクロ/青島)", "value": 1500 },
+      { "id": "rivalSub", "label": "ライバルヘルメット出現(榎木/蒲生/洞口/浜岡)", "value": 700 },
+      { "id": "exItem", "label": "EXアイテム所持(EXストック/ペンギン)", "value": 1500 },
+      { "id": "logo", "label": "Vロゴ/ロゴ+キラキラ履歴", "value": 1200 },
+      { "id": "yuriku1400", "label": "差枚+1400以上(有利区間切り狙い)", "value": 800 }
+    ]
+  }
 }

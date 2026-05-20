@@ -7,7 +7,7 @@
     "introDate": "2023-04-03",
     "installations": 5634,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
+    "status": "ready",
     "iconColor": "#7c2d12"
   },
   {
@@ -51,7 +51,7 @@
     "introDate": "2023-12-04",
     "installations": 4800,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
+    "status": "ready",
     "iconColor": "#0369a1"
   },
   {
@@ -84,7 +84,7 @@
     "introDate": "2026-04-06",
     "installations": 4200,
     "lastUpdated": "2026-05-20",
-    "status": "preparing",
+    "status": "ready",
     "iconColor": "#fbbf24"
   },
   {
