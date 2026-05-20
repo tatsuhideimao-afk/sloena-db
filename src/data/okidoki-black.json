@@ -8,6 +8,7 @@
   "lastUpdated": "2026-05-20",
   "status": "ready",
   "iconColor": "#52525b",
+  "hintsLabel": "ランプ示唆",
   "sources": [
     { "name": "altema", "url": "https://altema.jp/pachimo/" },
     { "name": "ちょんぼりすた", "url": "https://chonborista.com/slot/universal-slot/212411/" },

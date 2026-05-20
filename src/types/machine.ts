@@ -8,6 +8,7 @@ export interface Machine {
   lastUpdated: string;
   status: "ready" | "preparing";
   iconColor: string;
+  hintsLabel?: string;
   sources?: Source[];
   spec?: Spec;
   ceilings?: Ceiling[];

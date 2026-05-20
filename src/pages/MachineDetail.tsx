@@ -81,7 +81,7 @@ export default function MachineDetail() {
                     : 'bg-[#131c18] border-teal-900/30 text-stone-400'
                 }`}
               >
-                {t.label}
+                {t.id === 'shotai' ? machine.hintsLabel || '示唆' : t.label}
               </button>
             ))}
           </div>

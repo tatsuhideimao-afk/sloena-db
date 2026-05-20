@@ -8,6 +8,7 @@
   "lastUpdated": "2026-05-20",
   "status": "ready",
   "iconColor": "#dc2626",
+  "hintsLabel": "招待状",
   "sources": [
     { "name": "altema", "url": "https://altema.jp/pachimo/ltokyoghoul" },
     { "name": "なな徹", "url": "https://nana-press.com/kaiseki/machine/889/" },
