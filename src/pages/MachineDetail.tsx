@@ -9,6 +9,7 @@ import EndCardsList from '../components/EndCardsList';
 import YameRules from '../components/YameRules';
 import SourceFooter from '../components/SourceFooter';
 import ComingSoon from '../components/ComingSoon';
+import ShockPointCounter from '../components/ShockPointCounter';
 
 const TABS = [
   { id: 'calc', label: '期待値' },
@@ -93,7 +94,12 @@ export default function MachineDetail() {
           <ComingSoon machine={machine} />
         ) : (
           <>
-            {tab === 'calc' && <ExpectedValueCalculator machine={machine} />}
+            {tab === 'calc' && (
+              <div className="space-y-3">
+                {machine.id === 'tokyo-ghoul' && <ShockPointCounter />}
+                <ExpectedValueCalculator machine={machine} />
+              </div>
+            )}
 
             {tab === 'nerai' && (
               <div className="space-y-2">
