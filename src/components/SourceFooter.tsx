@@ -13,14 +13,18 @@ export default function SourceFooter({ sources, lastUpdated }: Props) {
         <ul className="space-y-1">
           {sources.map((s, i) => (
             <li key={i} className="text-xs">
-              <a
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-teal-600 hover:underline"
-              >
-                {s.name}
-              </a>
+              {s.url ? (
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-600 hover:underline"
+                >
+                  {s.name}
+                </a>
+              ) : (
+                <span className="text-slate-600">{s.name}</span>
+              )}
             </li>
           ))}
         </ul>

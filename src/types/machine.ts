@@ -25,7 +25,11 @@ export interface Machine {
 
 export interface Source {
   name: string;
-  url: string;
+  url?: string;
+  type?: string;
+  channel?: string;
+  date?: string;
+  note?: string;
 }
 
 export interface Spec {
@@ -98,6 +102,30 @@ export interface NeraiQuick {
   note: string;
 }
 
+export interface ShockPointTier {
+  range: string;
+  modifier: string;
+  note: string;
+}
+
+export interface ShockPoint {
+  id: string;
+  label: string;
+  description?: string;
+  tiers: ShockPointTier[];
+  expectedValueImpact?: string;
+  releaseBonus?: string;
+  countingRule?: string;
+}
+
+export interface YuriKugiri {
+  id: string;
+  label: string;
+  description?: string;
+  checkPoints: string[];
+  warning?: string;
+}
+
 export interface Corrections {
   sluRule?: { [key: string]: number };
   czRanges?: {
@@ -105,4 +133,6 @@ export interface Corrections {
     deep?: { min: number; value: number; label: string };
   };
   options?: { id: string; label: string; value: number }[];
+  shockPoint?: ShockPoint;
+  yuriKugiri?: YuriKugiri;
 }
